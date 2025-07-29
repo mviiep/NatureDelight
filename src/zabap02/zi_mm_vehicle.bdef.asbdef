@@ -1,0 +1,41 @@
+managed
+//with draft;
+implementation in class zbp_i_mm_vehicle unique;
+strict ( 2 );
+
+define behavior for ZI_MM_VEHICLE //alias <alias_name>
+persistent table ztmm_vehicle
+lock master
+authorization master ( instance )
+etag master CreatedOn
+{
+  create;
+  update;
+  delete;
+
+  field ( numbering : managed, readonly ) Vid;
+  field ( readonly ) VendorName;
+  field ( mandatory ) VehicleNo, Effdate, Vendor, VehicleType;
+
+  determination fetchname on modify { field Vendor; create; }
+  determination vehicleuppercase on modify {  field VehicleNo ; create ; }
+  validation    check_vehicle_no on save { field VehicleNo ; create ; }
+
+  mapping for ztmm_vehicle
+    {
+      Vid          = vid;
+      VehicleNo    = vehicle_no;
+      Effdate      = effdate;
+      Vendor       = lifnr;
+      VendorName   = name1;
+      VehicleType  = vehi_type;
+      Capacity     = cap;
+      CapacityUnit = capuom;
+      Currency     = Currency;
+      Rate         = rate;
+      Driver       = driver_name;
+      DriverPhone  = driver_telno;
+      createdBy    = created_by;
+      createdOn    = created_on;
+    }
+}

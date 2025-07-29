@@ -1,0 +1,57 @@
+@Metadata.layer: #CORE
+@UI: { 
+  headerInfo: { typeName: 'RMRD Batch',
+                typeNamePlural: 'RMRD Batch',
+                title: { type: #STANDARD, label: 'RMRD Batch Update', value: 'Batch' } }, 
+                presentationVariant: [{ sortOrder: [{ by : 'Id', direction: #ASC }] }]}
+annotate view ZC_ZPP_RMRD_BATCH
+    with 
+{
+//@UI.hidden: true   
+@UI: { lineItem:       [{ position: 10 }],
+       identification: [{ position: 10 }]}
+Id;
+
+@UI: { lineItem:       [{ position: 20 }, { type: #FOR_ACTION, dataAction: 'UpdateBatch', label: 'UpdateBatch' }],
+       identification: [{ position: 20 }, { type: #FOR_ACTION, dataAction: 'UpdateBatch', label: 'UpdateBatch' }],
+//@UI: { lineItem:       [{ position: 20 }], 
+//       identification: [{ position: 20 }],
+       selectionField: [{ position: 20 }] }    
+    Matnr;
+    
+@UI: { lineItem:       [{ position: 30 }],
+       identification: [{ position: 30 }],
+       selectionField: [{ position: 30 }] }        
+    Batch;
+    
+@UI: { lineItem:       [{ position: 40 }],
+       identification: [{ position: 40 }],
+       selectionField: [{ position: 40 }] }        
+    Uom;
+    
+@UI: { lineItem:       [{ position: 50 }],
+       identification: [{ position: 50 }],
+       selectionField: [{ position: 50 }] }        
+    DestinationFat;
+    
+@UI: { lineItem:       [{ position: 60 }],
+       identification: [{ position: 60 }],
+       selectionField: [{ position: 60 }] }        
+    DestinationSnf;
+    
+@UI: { lineItem:       [{ position: 70 }],
+       identification: [{ position: 70 }],
+       selectionField: [{ position: 70 }] }        
+    DestinationProtein;    
+    
+  @UI: {  lineItem:       [ { position: 80 }], 
+        identification: [ { position: 80 }],
+       selectionField: [{ position: 80 }] }
+  BatchUpd;              
+
+@UI.hidden: true         
+    CreatedBy;
+@UI.hidden: true             
+    CreatedOn;    
+    
+}

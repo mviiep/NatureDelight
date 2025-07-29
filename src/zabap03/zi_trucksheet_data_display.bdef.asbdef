@@ -1,0 +1,17 @@
+managed implementation in class zbp_i_trucksheet_data_display unique;
+strict ( 2 );
+
+define behavior for ZI_TRUCKSHEET_DATA_DISPLAY //alias <alias_name>
+//persistent table zsdt_truckshet_h
+with unmanaged save
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  create;
+  update;
+  delete;
+
+  field (  readonly ) TrucksheetNo;
+    action ( features : instance ) PrintForm result [1] $self;
+}

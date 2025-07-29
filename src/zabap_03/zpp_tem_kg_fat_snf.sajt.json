@@ -1,0 +1,35 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "Job Template for KG Fat and KG Snf",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "catalogName": "ZPP_CAT_KG_FAT_SNF"
+  },
+  "parameters": {
+    "singleValueParameters": [
+      {
+        "name": "P_ORDM",
+        "value": "000000000000000034"
+      },
+      {
+        "name": "P_PLANT",
+        "value": "1102"
+      },
+      {
+        "name": "P_RAWM",
+        "value": "000000000000000033"
+      },
+      {
+        "name": "P_SIMUL",
+        "value": "X"
+      },
+      {
+        "name": "P_SLOC",
+        "value": "S004"
+      }
+    ]
+  }
+}

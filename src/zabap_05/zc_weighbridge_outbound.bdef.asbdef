@@ -1,0 +1,12 @@
+projection;
+strict ( 2 );
+
+define behavior for ZC_WEIGHBRIDGE_OUTBOUND alias WeighBridgeOutbound
+{
+  use create;
+  use update;
+
+  use action GetWeight;
+
+
+}

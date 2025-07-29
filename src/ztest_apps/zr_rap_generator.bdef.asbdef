@@ -1,0 +1,43 @@
+managed implementation in class ZBP_R_RAP_GENERATOR unique;
+strict ( 2 );
+with draft;
+
+define behavior for ZR_RAP_GENERATOR alias RAP_GENERATOR
+persistent table zrap_generator
+draft table ZRAP_GENERATOR_D
+etag master LocalLastChanged
+lock master total etag LastChanged
+authorization master( global )
+
+{
+  field ( mandatory : create )
+   UuidKey;
+
+  field ( readonly )
+   LastChanged,
+   LocalLastChanged;
+
+  field ( readonly : update )
+   UuidKey;
+
+
+  create;
+  update;
+  delete;
+
+  draft action Edit;
+  draft action Activate optimized;
+  draft action Discard;
+  draft action Resume;
+  draft determine action Prepare;
+
+  mapping for ZRAP_GENERATOR
+  {
+    UuidKey = uuid_key;
+    Description = description;
+    Price = price;
+    Currency = currency;
+    LocalLastChanged = local_last_changed;
+    LastChanged = last_changed;
+  }
+}

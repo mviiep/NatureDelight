@@ -1,0 +1,131 @@
+@Metadata.layer: #CORE
+@UI: { 
+  headerInfo: { typeName: 'Milk Rate Card',
+                typeNamePlural: 'Milk Rate Card',
+                title: { type: #STANDARD, label: 'MilkRateCard' } }, //, value: 'Id' } }, 
+                presentationVariant: [{ sortOrder: [{ by : 'Id', direction: #ASC }] }]  }
+annotate view ZC_ZMM_MILKRATECARD
+    with  
+{
+@UI.facet: [{ id : 'RateCard',
+              purpose: #STANDARD,
+              type: #IDENTIFICATION_REFERENCE,
+              label: 'Milk Rate Card',
+              position: 10 }]
+
+@UI:{ identification: [{ position: 1, label: 'ID' }] }
+  Id;
+
+@UI: { lineItem:       [{ position: 20 }],
+       identification: [{ position: 20 }],
+       selectionField: [{ position: 20 }] }
+        
+    Plant;
+@UI: { lineItem:       [{ position: 30 }],
+       identification: [{ position: 30 }],
+       selectionField: [{ position: 30 }] }    
+    Sloc;
+    
+
+//@UI: { identification: [{ position: 35 }] } 
+@UI: { lineItem:       [{ position: 35 }] }
+//       selectionField: [{ position: 35 }] }    
+    Lgobe;       
+    
+@UI: { lineItem:       [{ position: 40 }],
+       identification: [{ position: 40 }],
+       selectionField: [{ position: 40 }] }                  
+    Vendor; 
+    
+//@UI: { identification: [{ position: 45 }] } 
+@UI: { lineItem:       [{ position: 45 }] }
+//       selectionField: [{ position: 45 }] }    
+    Name1;           
+    
+@UI: { lineItem:       [{ position: 50 }],
+       identification: [{ position: 50 }],
+       selectionField: [{ position: 50 }] }    
+    Effdate;
+    
+@UI: { lineItem:       [{ position: 60 }],
+       identification: [{ position: 60 }],
+       selectionField: [{ position: 60 }] }    
+    Milktype;        
+    
+@UI: { lineItem:       [{ position: 70 }],
+       identification: [{ position: 70 }],
+       selectionField: [{ position: 70 }] }    
+    Matnr;
+@UI: { lineItem:       [{ position: 80 }],
+       identification: [{ position: 80 }] }
+@UI.hidden: true            
+    Fatuom;
+@UI: { lineItem:       [{ position: 90 }],
+       identification: [{ position: 90 }] }        
+    Fat;
+@UI: { lineItem:       [{ position: 100 }],
+       identification: [{ position: 100 }] }    
+    Snf;
+@UI: { lineItem:       [{ position: 110 }],
+       identification: [{ position: 110 }] }    
+    Protain;
+//@UI: { lineItem:       [{ position: 120 }] }
+@UI: { identification: [{ position: 120 }] }    
+    Param1;
+//@UI: { lineItem:       [{ position: 130 }] }
+@UI: { identification: [{ position: 130 }] }    
+    Param2;
+//@UI: { lineItem:       [{ position: 140 }] }
+@UI: { identification: [{ position: 140 }] }    
+    Param3;
+//@UI: { lineItem:       [{ position: 150 }] }
+@UI: { identification: [{ position: 150 }] }    
+    Param4;
+//@UI: { lineItem:       [{ position: 160 }] }
+@UI: { identification: [{ position: 160 }] }    
+    Param5;
+@UI: { lineItem:       [{ position: 170 }],
+       identification: [{ position: 170 }] }    
+    Currency;
+@UI: { lineItem:       [{ position: 180 }],
+       identification: [{ position: 180 }] }    
+    Rate;
+@UI: { lineItem:       [{ position: 190 }],
+       identification: [{ position: 190 }] }  
+    BaseRate;
+@UI: { lineItem:       [{ position: 200 }],
+       identification: [{ position: 200 }] }         
+    Incentive;
+@UI: { lineItem:       [{ position: 210 }],
+       identification: [{ position: 210 }] }  
+    Commision;
+@UI: { lineItem:       [{ position: 220 }],
+       identification: [{ position: 220 }] }  
+    Transport;
+    
+
+//  @UI: {  lineItem:       [ { type: #FOR_ACTION, dataAction: 'UploadExcel', label: 'Upload Excel' } ],
+//        identification: [ { type: #FOR_ACTION, dataAction: 'UploadExcel', label: 'Upload Excel' } ] }
+//  @UI.hidden: true
+//  Attachment;
+//
+//  @UI.hidden: true
+//  MimeType;
+//
+//  @UI.hidden: true
+//  Filename;                                    
+    
+//@UI: { lineItem:       [{ position: 240 }],
+//       identification: [{ position: 240 }] }             
+//@UI.hidden: true         
+@UI: { lineItem:       [{ position: 230 }],
+       identification: [{ position: 230 }],
+       selectionField: [{ position: 230 }] }                  
+    CreatedBy;
+@UI.hidden: true             
+    CreatedOn;
+@UI.hidden: true             
+    ChangedBy;
+@UI.hidden: true             
+    ChangedOn;    
+}

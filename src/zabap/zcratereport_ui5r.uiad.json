@@ -1,0 +1,33 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "Crate Report",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD"
+  },
+  "ui5AppDetails": {
+    "appId": "com.nd.zcratereport"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_D465CE39F90515F524BED39B2F9AAA2AAD53A8A2_TM",
+    "semanticObject": "zcratereport",
+    "action": "display",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_D465CE39F90515F524BED39B2F9AAA2AAD53A8A2_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Crate Report"
+      }
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "Sales Order Create",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "className": "ZBG_SALES_ORDER_CREATE"
+  },
+  "parameters": [
+    {
+      "name": "P_CREATE",
+      "mandatory": true
+    },
+    {
+      "name": "P_DATE",
+      "mandatory": true
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "Route Distance",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD"
+  },
+  "ui5AppDetails": {
+    "appId": "com.nd.zroutedistance"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_9ED9A15F29D91343A7B06B205A99AACB03721675_TM",
+    "semanticObject": "zroute_distance",
+    "action": "display",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_9ED9A15F29D91343A7B06B205A99AACB03721675_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Route Distance"
+      }
+    }
+  ]
+}

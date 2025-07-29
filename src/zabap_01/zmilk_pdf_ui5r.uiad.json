@@ -1,0 +1,33 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "Milk Collection Form Display",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD"
+  },
+  "ui5AppDetails": {
+    "appId": "com.nd.zmilkpdf"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_1874CFCF6267F29E5096ADB12E863A4CEA4C6038_TM",
+    "semanticObject": "zmilk_pdf",
+    "action": "display",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_1874CFCF6267F29E5096ADB12E863A4CEA4C6038_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Milk Collection Form Display"
+      }
+    }
+  ]
+}

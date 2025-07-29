@@ -1,0 +1,94 @@
+@Metadata.layer: #CORE
+@UI: {
+  headerInfo: { typeName: 'Gate Entry',
+                typeNamePlural: 'Gate Entries',
+               title: { type: #STANDARD, label: 'Gate Entry'  } },
+                presentationVariant: [{ sortOrder: [{ by : 'GateEntryNo', direction: #ASC }] }]}
+annotate entity ZC_GATE_ENTRY with
+
+{
+  @UI.facet: [{
+             purpose: #STANDARD,
+             type: #IDENTIFICATION_REFERENCE,
+             label: 'Gate Entry'
+              }]
+//  @UI: { lineItem:       [{ position: 10 }],
+//  identification: [{ position: 10 }],
+//  selectionField: [{ position: 10 }] }
+  
+    @UI: {  lineItem:       [ { position: 10 }  ],
+        identification: [ { position: 10 } ],
+       selectionField: [{ position: 10 }] }
+ //{ type: #FOR_ACTION, dataAction: 'Print_Gate_Pass', label: 'Print' }
+  GateEntryNo;
+
+  @UI: { lineItem:       [{ position: 20 }],
+  identification: [{ position: 20 }],
+  selectionField: [{ position: 20 }] }
+  VehicleNo;
+
+  @UI: { lineItem:       [{ position: 30 }],
+  identification: [{ position: 30 }],
+  selectionField: [{ position: 30 }] }
+  EntryType;
+
+  @UI: { lineItem:       [{ position: 40 }],
+  identification: [{ position: 40 }]
+  }
+  DriverName;
+
+  @UI: { lineItem:       [{ position: 50 }],
+  identification: [{ position: 50 }]
+  }
+  DriverMobile;
+
+  @UI: { lineItem:       [{ position: 60 }],
+  identification: [{ position: 60 }],
+  selectionField: [{ position: 60 }] }
+  Comodity;
+
+  @UI: { lineItem:       [{ position: 70 }],
+  identification: [{ position: 70 }]}
+  InboundType;
+  @UI: { lineItem:       [{ position: 71 }],
+  identification: [{ position: 71 }]}
+  Material;
+
+  @UI: { lineItem:       [{ position: 80 }],
+  identification: [{ position: 80 }],
+  selectionField: [{ position: 80 }] }
+  StoNo;
+
+  @UI: { lineItem:       [{ position: 90 }],
+  identification: [{ position: 90 }]}
+  Batch;
+
+  @UI: { lineItem:       [{ position: 91 }],
+  identification: [{ position: 91 }] }
+  Purpose;
+
+  @UI: { lineItem:       [{ position: 92 } ,{ type: #FOR_ACTION, dataAction: 'vehicle_out', label: 'Vehicle Out' }],
+  identification: [{ position: 92 } ,{ type: #FOR_ACTION, dataAction: 'vehicle_out', label: 'Vehicle Out' }]}
+  InDate;
+
+  @UI: { lineItem:       [{ position: 93 }],
+  identification: [{ position: 93 }] }
+  InTime;
+
+  @UI: { lineItem:       [{ position: 94 }],
+  identification: [{ position: 94 }] }
+  OutDate;
+
+  @UI: { lineItem:       [{ position: 95 }],
+  identification: [{ position: 95 }] }
+  OutTime;
+
+  @UI.hidden: true
+  VehicleOut;
+ @UI.hidden: true
+  Pdfattach;
+  @UI.hidden: true
+  Mimetype;
+  @UI.hidden: true
+  Filename;
+}

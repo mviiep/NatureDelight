@@ -1,0 +1,24 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "Delete Rate Card",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "className": "ZCLBG_DELETE_RATECARD"
+  },
+  "parameters": [
+    {
+      "name": "P_PLANT",
+      "mandatory": true
+    },
+    {
+      "name": "S_SLOC"
+    },
+    {
+      "name": "S_DATE",
+      "mandatory": true
+    }
+  ]
+}

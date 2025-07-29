@@ -1,0 +1,29 @@
+managed implementation in class zbp_i_rmrd_batch_update unique;
+strict ( 2 );
+
+define behavior for ZI_RMRD_BATCH_UPDATE //alias <alias_name>
+with unmanaged save
+//persistent table ztrmrd_batch
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  create;
+  update;
+  delete;
+  field ( readonly ) Matnr , Batch;
+
+  action ( features : instance ) UpdateBatch result [1] $self;
+
+ mapping for ztrmrd_batch
+ {   Matnr = matnr;
+    Batch = batch;
+
+     DestinationFat = destination_fat;
+     DestinationProtein = destination_protein;
+     DestinationSnf = destination_snf;
+     Uom = uom;
+	
+}
+
+ }

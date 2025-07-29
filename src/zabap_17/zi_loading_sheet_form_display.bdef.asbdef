@@ -1,0 +1,21 @@
+managed implementation in class zbp_i_loading_sheet_form_displ unique;
+
+strict ( 2 );
+
+define behavior for ZI_LOADING_SHEET_FORM_DISPLAY with unmanaged save  //alias <alias_name>
+//persistent table <???>
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  create;
+  update;
+  delete;
+  field(readonly) TruckSheetNo;
+  action(features : instance ) PRINT_FORM  result [1] $self;
+  mapping for zsdt_load_sheet{
+  loadpdf = pdf_data;
+  LoadTruckseet = trucksheet_no;
+
+  }
+}

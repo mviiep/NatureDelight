@@ -1,0 +1,29 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "Template For Delete RateCard",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "catalogName": "ZCAT_DELETE_RATECARD"
+  },
+  "parameters": {
+    "singleValueParameters": [
+      {
+        "name": "P_PLANT",
+        "value": ""
+      }
+    ],
+    "valueRangesParameters": [
+      {
+        "name": "S_DATE",
+        "valueRanges": []
+      },
+      {
+        "name": "S_SLOC",
+        "valueRanges": []
+      }
+    ]
+  }
+}

@@ -1,0 +1,5 @@
+@EndUserText.label: 'Crate Balance Form'
+define service ZSD_CRATE_BALANCE_FORM {
+  expose ZCE_CRATE_BAL_FORM_HEADER;
+  expose ZCE_CRATE_BAL_FORM_ITEM;
+}

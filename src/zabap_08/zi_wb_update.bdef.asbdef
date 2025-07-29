@@ -1,0 +1,20 @@
+unmanaged implementation in class zbp_i_wb_update unique;
+strict(1);
+
+define behavior for ZI_WB_UPDATE
+
+lock master
+authorization master ( instance )
+{
+
+ field ( readonly ) gp_no;
+  action update_truck result [1] $self;
+
+  mapping for ZI_WB_UPDATE
+  {
+
+    ebeln = ebeln;
+    ebelp = ebelp;
+    fulltruckunload = fulltruckunload;
+  }
+}

@@ -1,0 +1,13 @@
+managed implementation in class zbp_i_wb_display unique;
+strict ( 2 );
+
+define behavior for ZI_WB_DISPLAY //alias <alias_name>
+persistent table zmmt_weigh_bridg
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  create;
+  update;
+  delete;
+}

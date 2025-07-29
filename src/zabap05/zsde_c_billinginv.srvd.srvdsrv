@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service Defination for ZC_BILLINGINV'
+define service ZSDE_C_BILLINGINV {
+  expose ZC_BILLINGINV;
+}

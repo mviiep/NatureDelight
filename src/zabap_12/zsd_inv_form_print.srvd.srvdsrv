@@ -1,0 +1,5 @@
+@EndUserText.label: 'ZSD_INV_FORM_PRINT'
+define service ZSD_INV_FORM_PRINT {
+  expose ZCE_INV_FORM_PRINT;
+  expose ZCE_INV_FORM_PRINT_ITEM;
+}

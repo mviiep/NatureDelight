@@ -1,0 +1,33 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "Leakage Report",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD"
+  },
+  "ui5AppDetails": {
+    "appId": "com.nd.zleakagereport"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_417781B79272CB61FB027ECDA5061CFE45C7755F_TM",
+    "semanticObject": "z_leakagereport",
+    "action": "display",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_417781B79272CB61FB027ECDA5061CFE45C7755F_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Leakage Report"
+      }
+    }
+  ]
+}

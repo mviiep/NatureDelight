@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service Definition for ZMM_MILKCOLL'
+define service Z_EXPOSE_ZMM_MILKCOLL {
+  expose ZC_ZMM_MILKCOLL as MilkCOll;
+}

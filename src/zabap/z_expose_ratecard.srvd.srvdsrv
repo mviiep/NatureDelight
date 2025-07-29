@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service Definition For RateCard'
+define service Z_EXPOSE_RATECARD {
+  expose ZC_ZMM_MILKRATECARD as RateCard;
+}

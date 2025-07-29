@@ -1,0 +1,4 @@
+@EndUserText.label: 'Weigh Bridge Outbound'
+define service ZSD_WEIGHBRIDGE_OUTBOUND {
+  expose ZC_WEIGHBRIDGE_OUTBOUND;
+}

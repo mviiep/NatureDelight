@@ -1,0 +1,5 @@
+@EndUserText.label: 'Yeild Report'
+define service ZSD_YEILD_REPORT {
+  expose ZCE_YEILD_REPORT_HEADER;
+  expose ZCE_YEILD_REPORT_ITEM;
+}

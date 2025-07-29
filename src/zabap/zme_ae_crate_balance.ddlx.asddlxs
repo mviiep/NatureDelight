@@ -1,0 +1,9 @@
+@Metadata.layer: #CORE
+annotate entity ZAE_CRATE_BALANCE
+    with 
+{   @EndUserText.quickInfo: 'From Date'
+    FROM_DATE;
+     @EndUserText.quickInfo: 'To Date'
+    TO_DATE;
+    
+}

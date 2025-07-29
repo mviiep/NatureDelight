@@ -1,0 +1,11 @@
+projection;
+strict ( 2 );
+
+define behavior for ZC_ZMM_MIRO_PRINT alias MiroPrint
+{
+//  use create;
+//  use update;
+//  use delete;
+
+  use action Print;
+}

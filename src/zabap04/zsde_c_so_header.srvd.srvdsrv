@@ -1,0 +1,5 @@
+@EndUserText.label: 'Service Defination for ZC_SO_HEADER'
+define service ZSDE_C_SO_HEADER {
+  expose ZC_SO_HEADER;
+  expose ZC_SO_ITEM;
+}

@@ -1,0 +1,52 @@
+@Metadata.layer: #CORE
+@UI: {
+  headerInfo: { typeName: 'WeighBridge Outbound',
+                typeNamePlural: 'WeighBridge Outbound',
+               title: { type: #STANDARD, label: 'WeighBridge Outbound ', value: 'TrucksheetNo' } },
+                presentationVariant: [{ sortOrder: [{ by : 'TrucksheetNo', direction: #ASC }] }]}
+annotate view ZC_WEIGHBRIDGE_OUTBOUND with
+{
+       @UI.facet: [{ 
+              purpose: #STANDARD,
+              type: #IDENTIFICATION_REFERENCE,
+              label: 'Weighbridge Outbound',    
+                   
+              position: 10 }]
+              
+ 
+  
+  @UI: { lineItem:       [{ position: 10 }],
+  identification: [{ position: 10 }],
+  selectionField: [{ position: 10 }] }
+  TrucksheetNo;
+  @UI: { lineItem:       [{ position: 20 }],
+  selectionField: [{ position: 20 }],
+  identification: [{ position: 20 }] }
+
+  VehicleNo;
+  @UI: { lineItem:       [{ position: 30 }],
+  identification: [{ position: 30 }] }
+  TotalTrucksheetWeight;
+  @UI: { lineItem:       [{ position: 40 }],
+  identification: [{ position: 40 }] }
+  TareWeight;
+  
+  @UI: { lineItem:       [{ position: 50 } ],
+  identification: [{ position: 50 } ,{ type: #FOR_ACTION, dataAction: 'GetWeight', label: 'Get Weight' } ] }
+  
+  WeighbridgeWeight;
+
+  @UI: { lineItem:       [{ position: 60 }],
+  identification: [{ position: 60 }] }
+  DifferenceWeight;
+
+  @UI.hidden: true
+  WeightUnit;
+
+  @UI.hidden: true
+  CreatedBy;
+
+  @UI.hidden: true
+  CreatedOn;
+
+}

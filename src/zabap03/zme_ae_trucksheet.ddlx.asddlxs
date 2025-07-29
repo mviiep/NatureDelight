@@ -1,0 +1,25 @@
+@Metadata.layer: #CORE
+//@Search.searchable: true
+annotate entity ZAE_TRUCKSHEET with
+{
+  @EndUserText.label: 'Trucksheet Date'
+  trucksheet_date;
+  //  @EndUserText.label: 'Crate days'
+  //  crate_days;
+  @Consumption.valueHelpDefinition: [{ entity: { name: 'ZC_MM_VEHICLE',
+                                               element: 'VehicleNo' } }]
+  @EndUserText.label: 'Vehicle No'
+
+  vehicleno;
+  @EndUserText.label: 'Driver'
+  driver_name;
+  @EndUserText.label: 'Driver Phone'
+  driver_telno;
+  @EndUserText.label: 'Distance'
+  distace;
+  //  @EndUserText.label: 'Transport Doc Number'
+  //  trans_doc_no;
+  //  @EndUserText.label: 'Route'
+  //  route;
+
+}

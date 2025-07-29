@@ -1,0 +1,34 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "Gate Pass Entry",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD"
+  },
+  "ui5AppDetails": {
+    "appId": "com.nd.zgateentry"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_1327F841C4AAA9DDF5F2FCA7473B89DFDCA686E9_TM",
+    "semanticObject": "zgate_entry",
+    "action": "create",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_1327F841C4AAA9DDF5F2FCA7473B89DFDCA686E9_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Gate Pass Entry",
+        "subtitle": "Gate In / Gate Exit"
+      }
+    }
+  ]
+}

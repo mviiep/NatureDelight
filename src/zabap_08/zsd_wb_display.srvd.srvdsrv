@@ -1,0 +1,4 @@
+@EndUserText.label: 'WB display'
+define service ZSD_WB_DISPLAY {
+  expose ZC_WB_DISPALY;
+}

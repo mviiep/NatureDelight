@@ -1,0 +1,7 @@
+@EndUserText.label: 'Serv Def For ZCE_CLEARTAX_EINV'
+define service ZCE_CLEARTAX_EINV {
+  expose ZCE_CLEARTAX_EINV;
+  expose ZCE_CLEARTAX_EINV_CANC;
+  expose ZCE_CLEARTAX_EWAY;
+  expose ZCE_CLEARTAX_EWAY_CANC;
+}

@@ -1,0 +1,33 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "E-WayBill Cancellation",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD"
+  },
+  "ui5AppDetails": {
+    "appId": "com.nd.zewaycancel"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_138834FEA50E8C5B926CDB42BC18F4BF66D59B8E_TM",
+    "semanticObject": "ze_way_cancel",
+    "action": "manage",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_138834FEA50E8C5B926CDB42BC18F4BF66D59B8E_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "E-WayBill Cancellation"
+      }
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+projection;
+strict ( 2 );
+
+define behavior for ZC_WB_VIEW alias BD_ZC_WB_VIEW
+{
+  use create;
+  use update;
+  use delete;
+
+  use action saveData;
+  use action fullTruckUnload;
+  use action outboundProcess;
+}

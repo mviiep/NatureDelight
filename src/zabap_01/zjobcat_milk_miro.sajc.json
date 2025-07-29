@@ -1,0 +1,24 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "JoB Catlog For Milk MIRO Posting",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "className": "ZBG_MILK_MIRO_POSTING"
+  },
+  "parameters": [
+    {
+      "name": "P_DATE",
+      "mandatory": true
+    },
+    {
+      "name": "R_DATE",
+      "mandatory": true
+    },
+    {
+      "name": "R_SLOC"
+    }
+  ]
+}

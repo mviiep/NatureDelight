@@ -1,0 +1,4 @@
+@EndUserText.label: 'Milk Quality Check'
+define service ZSD_RMRD_MILK_QTY_CHECK {
+  expose ZCE_RMRD_BATCH_UPDATE as RmrdMilkQtyCheck;
+}

@@ -1,0 +1,33 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "Loading Sheet Form Display",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD"
+  },
+  "ui5AppDetails": {
+    "appId": "com.nd.zloadingsheet"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_BFC2277A51225EECD0EABA3347E9B6EEAEA44D38_TM",
+    "semanticObject": "zloadingsheet",
+    "action": "display",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_BFC2277A51225EECD0EABA3347E9B6EEAEA44D38_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Loading Sheet Form Display"
+      }
+    }
+  ]
+}

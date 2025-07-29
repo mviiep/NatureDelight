@@ -1,0 +1,27 @@
+managed implementation in class zbp_i_zmm_miro_print unique;
+strict ( 2 );
+
+define behavior for ZI_ZMM_MIRO_PRINT alias MiroPrint
+with unmanaged save
+//persistent table zmm_milk_miro
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  create;
+  update;
+  delete;
+
+field ( readonly ) Mirodoc, Miroyear;
+action ( features : instance ) Print result [1] $self;
+
+mapping for zmm_milk_miro {
+	Mirodoc   = mirodoc;
+	Miroyear  = miroyear;
+	Lifnr     = lifnr;
+	Name1     = name1;
+	Plant     = plant;
+	Sloc      = sloc;
+	PdfAttach = pdf_attach;
+}
+}

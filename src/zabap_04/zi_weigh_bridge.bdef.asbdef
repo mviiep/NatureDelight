@@ -1,0 +1,32 @@
+managed implementation in class zbp_i_weigh_bridge unique;
+strict ( 2 );
+
+define behavior for ZI_WEIGH_BRIDGE //alias <alias_name>
+persistent table zmmt_weighbridge
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  create;
+  update;
+  delete;
+
+  field ( readonly: update ) PurchaseOrder, PurchaseOrderItem ;
+
+    mapping for zmmt_weighbridge
+    {
+      PurchaseOrder     = ebeln;
+      PurchaseOrderItem = ebelp;
+      StorageLocation   = lgort;
+      Quantity          = quantity;
+      QuantityUOM       = qtyuom;
+      ChilCenter        = yy1_chillingcenter_pdi;
+      Compartment       = yy1_compartment_pdi;
+      TotalWeight       = total_wt;
+      ItemWeight        = item_wt;
+      DiffereceWt       = diff_wt;
+      WeightUnit        = weight_unit;
+      CreatedBy         = created_by;
+      CreatedOn         = created_on;
+    }
+}

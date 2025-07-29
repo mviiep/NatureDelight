@@ -1,0 +1,4 @@
+@EndUserText.label: 'ZCE_MILK_COLLECTION_DELETE'
+define service ZCE_MILK_COLLECTION_DELETE {
+  expose ZCE_MILK_COLLECTION_DELETE;
+}

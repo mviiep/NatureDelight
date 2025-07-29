@@ -1,0 +1,4 @@
+@EndUserText.label: 'Milk Rate Card Report'
+define service Z_EXPOSE_RATECARD_REPORT {
+  expose ZCE_MILKRATECARD;
+}

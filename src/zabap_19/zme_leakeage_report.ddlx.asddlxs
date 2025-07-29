@@ -1,0 +1,64 @@
+@Metadata.layer: #CORE
+@UI.headerInfo: {
+    typeName: 'Leakage Report',
+    typeNamePlural: 'Leakage Report',
+    title: {
+        type: #STANDARD,
+        label: 'Leakage Report'
+    }
+    }
+
+
+annotate view ZC_LEAKAGE_DATA with
+{
+  @UI: {  lineItem:       [ { position: 10 }  ],
+         selectionField: [{ position: 10 }] }
+  CustomerReturn;
+  @UI: {  lineItem:       [ { position: 20 }  ]}
+  CustomerReturnItem;
+  @UI: {  lineItem:       [ { position: 30 }  ],
+     selectionField: [{ position: 30 }] }
+  BillingDocumentDate;
+  @UI: {  lineItem:       [ { position: 40 }  ],
+     selectionField: [{ position: 40 }] }
+  soldtoparty;
+  @UI: {  lineItem:       [ { position: 50 }  ]
+   }
+  CustomerName;
+  @UI: {  lineItem:       [ { position: 60 }  ],
+     selectionField: [{ position: 60 }] }
+  Product;
+  @UI: {  lineItem:       [ { position: 70 }  ]}
+  CustomerReturnItemText;
+  @UI: {  lineItem:       [ { position: 80 }  ]}
+  ItemNetWeight;
+  @UI: {  lineItem:       [ { position: 90 }  ]}
+  ItemWeightUnit;
+  @UI: {  lineItem:       [ { position: 100 }  ]}
+  NetAmount;
+  @UI: {  lineItem:       [ { position: 110 }  ]}
+  TaxAmount;
+  @UI: {  lineItem:       [ { position: 120 }  ]}
+  GrossAmount;
+  @UI: {  lineItem:       [ { position: 130 }  ]}
+  TransactionCurrency;
+  @UI: {  lineItem:       [ { position: 132 }  ]}
+  OrderQuantity;
+  @UI: {  lineItem:       [ { position: 134 }  ]}
+  RequestedQuantityUnit;
+  @UI: {  lineItem:       [ { position: 136 }  ]}
+  NetPriceAmount;
+  @UI: {  lineItem:       [ { position: 140 }  ]}
+  ReferenceSDDocument;
+  @UI: {  lineItem:       [ { position: 150 }  ]}
+  ReturnReason;
+  @UI: {  lineItem:       [ { position: 160 }  ]}
+  ReturnReasonName;
+  @UI: {  lineItem:       [ { position: 170 }  ]}
+  SDDocumentReason;
+  @UI: {  lineItem:       [ { position: 180 }  ]}
+  SDDocumentReasonText;
+
+
+
+}

@@ -1,0 +1,4 @@
+@EndUserText.label: 'Custom Entity Service definition'
+define service ZSDE_ZCE_SALES_ORDER {
+  expose ZCE_SALES_ORDER;
+}

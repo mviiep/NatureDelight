@@ -1,0 +1,6 @@
+@EndUserText.label: 'Service Definition for Weigh Bridge'
+define service ZSD_ZMM_WEIGHBRIDGE {
+  expose ZC_V_WEIGH_BRIDGE   as GET_WEIGH_BRIDGE;
+  expose ZC_WEIGH_BRIDGE;
+  expose ZCE_ZMM_WEIGHBRIDGE;
+}

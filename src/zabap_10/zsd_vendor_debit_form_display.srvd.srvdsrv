@@ -1,0 +1,4 @@
+@EndUserText.label: 'vendor debit form'
+define service ZSD_VENDOR_DEBIT_FORM_DISPLAY {
+  expose ZC_VEBNDOR_DEBIT_FORM_DISPLAY;
+}

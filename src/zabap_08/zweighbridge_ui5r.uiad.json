@@ -1,0 +1,34 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "Weighbridge",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD"
+  },
+  "ui5AppDetails": {
+    "appId": "com.nd.zweighbridge"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_EB73528A21B4D6611F974A8CD2F085E7710E8972_TM",
+    "semanticObject": "zweighbridge",
+    "action": "manage",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_EB73528A21B4D6611F974A8CD2F085E7710E8972_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Weighbridge",
+        "subtitle": "Inbound/Outbound"
+      }
+    }
+  ]
+}

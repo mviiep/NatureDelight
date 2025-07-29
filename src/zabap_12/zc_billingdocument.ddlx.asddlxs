@@ -1,0 +1,93 @@
+@Metadata.layer: #CORE
+@UI: { 
+  headerInfo: { typeName: 'Billing Document Print',
+                typeNamePlural: 'Billing Document Print',
+                title: { type: #STANDARD, label: 'Billing Document Print', value: 'BillingDocument' } }, 
+                presentationVariant: [{ sortOrder: [{ by : 'BillingDocumentDate', direction: #DESC }] }]}
+annotate view ZC_BILLINGDOCUMENT
+    with 
+{
+
+@UI.facet: [{ id : 'BillDoc',
+              purpose: #STANDARD,
+              type: #IDENTIFICATION_REFERENCE,
+              label: 'Billing Document Print',              
+              position: 10 }]
+
+  @UI: {  lineItem:     [ { position: 10 }, { type: #FOR_ACTION, dataAction: 'PRINT', label: 'Generate PDF' } ],
+        identification: [ { position: 10 }, { type: #FOR_ACTION, dataAction: 'PRINT', label: 'Generate PDF' } ],
+        selectionField: [{ position: 10 }]  }
+  BillingDocument;
+  
+@UI: { lineItem:       [{ position: 20 }],
+       identification: [{ position: 20 }],
+       selectionField: [{ position: 20 }] }        
+  BillingDocumentType;
+  
+@UI: { lineItem:       [{ position: 30 }],
+       identification: [{ position: 30 }],
+       selectionField: [{ position: 30 }] }             
+  SoldToParty;
+
+@UI: { lineItem:       [{ position: 35 }],
+       identification: [{ position: 35 }] }        
+  CustomerFullName;
+  
+@UI: { lineItem:       [{ position: 40 }],
+       identification: [{ position: 40 }] }        
+  SalesOrganization;
+  
+
+@UI: { lineItem:       [{ position: 50 }],
+       identification: [{ position: 50 }],
+       selectionField: [{ position: 50 }] }        
+  DistributionChannel;
+  
+
+@UI: { lineItem:       [{ position: 60 }],
+       identification: [{ position: 60 }] }        
+  Division;
+  
+
+@UI: { lineItem:       [{ position: 70 }],
+       identification: [{ position: 70 }],
+       selectionField: [{ position: 70 }] }        
+  BillingDocumentDate;
+  
+@UI: { lineItem:       [{ position: 80 }],
+       identification: [{ position: 80 }] }     
+  TotalNetAmount;
+  
+@UI: { lineItem:       [{ position: 90 }],
+       identification: [{ position: 90 }] }     
+  TransactionCurrency;
+  
+@UI: { lineItem:       [{ position: 100 }],
+       identification: [{ position: 100 }] }     
+  TotalTaxAmount;
+  @UI: { lineItem:       [{ position: 105 }],
+       identification: [{ position: 105 }] }   
+  TotalAmount;
+  
+@UI: { lineItem:       [{ position: 110 }],
+       identification: [{ position: 110 }] }     
+  CompanyCode;
+  
+@UI: { lineItem:       [{ position: 120 }],
+       identification: [{ position: 120 }] }     
+  FiscalYear;
+  
+@UI: { lineItem:       [{ position: 130 }],
+       identification: [{ position: 130 }],
+       selectionField: [{ position: 130 }] }     
+  AccountingDocument;
+  
+@UI: { lineItem:       [{ position: 130 }],
+       identification: [{ position: 130 }] }       
+  CreatedByUser;
+  
+@UI: { lineItem:       [{ position: 140 }],
+       identification: [{ position: 140 }] }         
+  CreationDate;
+    
+} 

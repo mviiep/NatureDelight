@@ -1,0 +1,4 @@
+@EndUserText.label: 'API for RMRD Batch upadte'
+define service Zsd_API_RMRD_BATCH_UPDATE {
+  expose ZP_API_RMRD_BATCH_UPDATE;
+}

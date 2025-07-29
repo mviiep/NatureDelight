@@ -1,0 +1,4 @@
+@EndUserText.label: 'Inward Freight Report'
+define service ZEXPOSE_INWARD_FR_REP {
+  expose ZCE_INWARD_FREIGHT_REP;
+}

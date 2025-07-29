@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service Defination for ZC_EI_API_URL'
+define service ZSDE_C_EI_API_URL {
+  expose ZC_EI_API_URL;
+}

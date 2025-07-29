@@ -1,0 +1,33 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "E-Invoice creation",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD"
+  },
+  "ui5AppDetails": {
+    "appId": "com.nd.zeinvcreate"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_04E650A80EC1087E15072017605B846B8BCAC456_TM",
+    "semanticObject": "ze_inv_create",
+    "action": "create",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_04E650A80EC1087E15072017605B846B8BCAC456_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "E-Invoice creation"
+      }
+    }
+  ]
+}

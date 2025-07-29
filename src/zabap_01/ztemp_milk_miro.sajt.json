@@ -1,0 +1,29 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "Job Template For Milk MIRO Posting",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "catalogName": "ZJOBCAT_MILK_MIRO"
+  },
+  "parameters": {
+    "singleValueParameters": [
+      {
+        "name": "P_DATE",
+        "value": ""
+      }
+    ],
+    "valueRangesParameters": [
+      {
+        "name": "R_DATE",
+        "valueRanges": []
+      },
+      {
+        "name": "R_SLOC",
+        "valueRanges": []
+      }
+    ]
+  }
+}

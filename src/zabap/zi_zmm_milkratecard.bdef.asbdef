@@ -1,0 +1,58 @@
+managed
+//with draft;
+implementation in class zbp_i_zmm_milkratecard unique;
+strict ( 2 ); //Uncomment this line in order to enable strict mode 2. The strict mode has two variants (strict(1), strict(2)) and is prerequisite to be future proof regarding syntax and to be able to release your BO.
+define behavior for ZI_ZMM_MILKRATECARD alias RateCard
+persistent table zmm_milkratecard
+lock master
+authorization master ( instance )
+etag master ChangedOn
+{
+  create;
+  update;
+  delete;
+
+field ( numbering : managed, readonly ) Id;
+field ( readonly ) Createdby, Createdon,
+                   Changedby, Changedon,
+                   Lgobe, Name1;
+
+//action ( features : instance ) UploadExcel result [1] $self;
+validation validate_effdate on save { field Effdate; create; }
+determination fetchname on modify { field Sloc, Vendor ; create; }
+validation mandatory_data on save { field plant, sloc, EffDate,
+                                          milktype, matnr, rate, currency,
+                                          fat, snf; create; }
+
+  mapping for zmm_milkratecard
+  {
+    Id = id;
+    Plant = plant;
+    Sloc = sloc;
+    Lgobe = lgobe;
+  Vendor = vendor;
+  Name1 = name1;
+  Effdate = effdate;
+  Milktype = milk_type;
+  Matnr = matnr;
+  Fatuom = fatuom;
+  Fat = fat;
+  Snf = snf;
+  Protain = protain;
+  Param1 = param_1;
+  Param2 = param_2;
+  Param3 = param_3;
+  Param4 = param_4;
+  Param5 = param_5;
+  Currency = currency;
+  Rate = rate;
+  BaseRate = base_rate;
+  Incentive = incentive;
+  Commision = commision;
+  Transport = transport;
+  Createdby = created_by;
+  Createdon = created_on;
+  Changedby = changed_by;
+  Changedon = changed_on;
+  }
+}

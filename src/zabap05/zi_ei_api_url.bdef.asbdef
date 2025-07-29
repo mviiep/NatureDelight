@@ -1,0 +1,27 @@
+managed implementation in class zbp_i_ei_api_url unique;
+strict ( 2 );
+
+define behavior for ZI_EI_API_URL //alias <alias_name>
+persistent table zei_api_url
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  create;
+  update;
+  delete;
+  field ( numbering : managed, readonly ) Id;
+
+  mapping for zei_api_url
+    {
+      Bukrs      = bukrs;
+      Type       = type;
+      Url        = url;
+      Method     = method;
+      Parameter1 = parameter1;
+      Parameter2 = parameter2;
+      Parameter3 = parameter3;
+      Parameter4 = parameter4;
+      Parameter5 = parameter5;
+    }
+}

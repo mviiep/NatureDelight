@@ -1,0 +1,4 @@
+@EndUserText.label: 'Delete PDF Crate Bal'
+define service ZSD_ZCE_CRATE_BAL_FORM_DELETE {
+  expose ZCE_CRATE_BAL_FORM_delete;
+}

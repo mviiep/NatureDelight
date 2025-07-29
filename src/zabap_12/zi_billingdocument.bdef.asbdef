@@ -1,0 +1,24 @@
+managed implementation in class zbp_i_billingdocument unique;
+strict ( 2 );
+
+define behavior for ZI_BILLINGDOCUMENT alias BillDoc
+with unmanaged save
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+
+field ( readonly ) BillingDocument;
+
+  create;
+  update;
+  delete;
+
+  action(features : instance ) PRINT result [1] $self;
+  mapping for zsdt_billprint{
+  BillingDocument = billingdocument;
+  pdf_data = pdf_data;
+
+  }
+
+}

@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service Defination for ZC_MM_VEHICLE'
+define service Z_SD_ZC_MM_VEHICLE {
+  expose ZC_MM_VEHICLE;
+}

@@ -1,0 +1,4 @@
+@EndUserText.label: 'MIRO Print'
+define service ZSD_MIRO_PRINT {
+  expose ZC_ZMM_MIRO_PRINT as MiroPrint;
+}

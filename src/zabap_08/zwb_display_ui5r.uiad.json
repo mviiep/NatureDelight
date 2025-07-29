@@ -1,0 +1,33 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "Weighbridge Report Display",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD"
+  },
+  "ui5AppDetails": {
+    "appId": "com.nd.zwbdisplay"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_8A7384C746746F02C144F60B7B16CF620BE32684_TM",
+    "semanticObject": "zwb_display",
+    "action": "display",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_8A7384C746746F02C144F60B7B16CF620BE32684_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Weighbridge Report Display"
+      }
+    }
+  ]
+}

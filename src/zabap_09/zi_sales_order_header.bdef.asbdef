@@ -1,0 +1,85 @@
+managed implementation in class zbp_i_sales_order_header unique;
+strict( 1 );
+with draft;
+
+define behavior for ZI_SALES_ORDER_HEADER alias SalesOrderHeader
+draft table zdraft_so_head
+with unmanaged save
+
+lock master
+total etag lastchangedat
+authorization master ( global )
+//etag master CreatedOn
+{
+  create;
+  update;
+  delete;
+  draft action Edit;
+  draft action  Activate;
+  draft action Discard;
+  draft action Resume;
+  draft determine action Prepare;
+  association _SalesItem { create;  with draft;}
+  field ( numbering : managed, readonly ) Id;
+  //field( mandatory : create ) SoID;
+//  field ( readonly :update )SoId;
+    field(readonly) CreatedBy, CreatedOn ,CreatedDate;
+  validation validate_data on save { field SoId; create; }
+  action CreateSalesOrder result [1] $self;
+  mapping for zsd_sales_header
+    {
+      Id            = id;
+      CustomerRef   = customer_ref;
+      Deliverydate  = deliverydate;
+      Dischannel    = dischannel;
+      Division      = division;
+      Ordertype     = ordertype;
+      Pricedate     = pricedate;
+      Salesorg      = salesorg;
+      Shipcondition = shipcondition;
+      Shiptoparty   = shiptoparty;
+      SoId          = soid;
+      Soldtoparty   = soldtoparty;
+      Vbeln         = vbeln;
+      lastchangedat = lastchangedat;
+      CreatedBy     = created_by;
+      CreatedOn     = created_on;
+      CreatedDate   = created_date;
+    }
+
+}
+
+define behavior for ZI_SALES_ORDER_ITEM alias SalesOrderItem
+draft table zdraft_so_item
+with unmanaged save
+
+lock dependent by _SalesHeader
+authorization dependent by _SalesHeader
+etag master Lastchangedat
+
+
+{
+
+  update;
+  delete;
+  field (numbering : managed)ItemId ;
+  field (readonly) HeaderId ;
+  association _SalesHeader { with draft; }
+
+
+  mapping for zsd_sales_item
+    {
+
+      Baseunit     = baseunit;
+      Gtin         = gtin;
+      Item         = item;
+      ItemCategory = item_category;
+      ItemId       = itemid;
+      Plant        = plant;
+      Product      = product;
+      Quatity      = quatity;
+      Route        = route;
+      SoId         = soid;
+      HeaderId      = header_id;
+    }
+}

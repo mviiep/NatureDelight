@@ -1,0 +1,64 @@
+@Metadata.layer: #CORE
+@UI: {
+  headerInfo: {
+    typeName: 'RAP_GENERATOR', 
+    typeNamePlural: 'RAP_GENERATORs'
+  }
+}
+annotate view ZC_RAP_GENERATOR with
+{
+  @UI.facet: [ {
+    id: 'idIdentification', 
+    type: #IDENTIFICATION_REFERENCE, 
+    label: 'RAP_GENERATOR', 
+    position: 10 
+  } ]
+  @UI.lineItem: [ {
+    position: 10 , 
+    importance: #MEDIUM, 
+    label: 'UuidKey'
+  } ]
+  @UI.identification: [ {
+    position: 10 , 
+    label: 'UuidKey'
+  } ]
+  
+  @Consumption.valueHelpDefinition: [{ entity:{ name: 'ZCDS_KEY_HVH', element: 'id'} }]
+  UuidKey;
+  
+  @UI.lineItem: [ {
+    position: 20 , 
+    importance: #MEDIUM, 
+    label: 'Description'
+  } ]
+  @UI.identification: [ {
+    position: 20 , 
+    label: 'Description'
+  } ]
+  Description;
+  
+  @UI.lineItem: [ {
+    position: 30 , 
+    importance: #MEDIUM, 
+    label: 'Price'
+  } ]
+  @UI.identification: [ {
+    position: 30 , 
+    label: 'Price'
+  } ]
+  Price;
+  
+  @UI.lineItem: [ {
+    position: 40 , 
+    importance: #MEDIUM, 
+    label: 'Currency'
+  } ]
+  @UI.identification: [ {
+    position: 40 , 
+    label: 'Currency'
+  } ]
+  Currency;
+  
+  @UI.hidden: true
+  LocalLastChanged;
+}

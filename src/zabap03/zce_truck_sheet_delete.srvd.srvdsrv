@@ -1,0 +1,4 @@
+@EndUserText.label: 'ZCE_TRUCK_SHEET_DELETE'
+define service ZCE_TRUCK_SHEET_DELETE {
+  expose ZCE_TRUCK_SHEET_DELETE;
+}

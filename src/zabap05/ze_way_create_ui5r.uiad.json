@@ -1,0 +1,33 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "E-WayBill Creation",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD"
+  },
+  "ui5AppDetails": {
+    "appId": "com.nd.zewaycreate"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_176D39F26B00D6353DD1E9D18B4490E98E21CEC8_TM",
+    "semanticObject": "ze_way_create",
+    "action": "create",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_176D39F26B00D6353DD1E9D18B4490E98E21CEC8_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "E-WayBill Creation"
+      }
+    }
+  ]
+}

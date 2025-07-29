@@ -1,0 +1,5 @@
+@EndUserText.label: 'Gate Entry Print'
+@AbapCatalog.extensibility.extensible: true
+define service ZSD_GATE_ENTRY_PRINT {
+  expose ZC_GATE_ENTRY_PRINT;
+}

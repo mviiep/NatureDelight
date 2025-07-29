@@ -1,0 +1,6 @@
+@EndUserText.label: 'Milk Quality Check'
+@AbapCatalog.extensibility.extensible: true
+define service ZSD_MILK_COLLECTION_FORM {
+  expose ZCE_MILK_COLLECTION_FORM;
+  expose ZCE_MILK_COLL_FORM_ITEM;
+}

@@ -1,0 +1,10 @@
+projection;
+strict ( 2 );
+
+define behavior for ZC_BILLINGINV //alias <alias_name>
+{
+//  use update;
+//  use delete;
+
+  use action CreateIRN;
+}

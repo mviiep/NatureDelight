@@ -1,0 +1,31 @@
+managed implementation in class zbp_i_weighbridge_outbound unique;
+strict ( 2 );
+
+define behavior for ZI_WEIGHBRIDGE_OUTBOUND alias WeighBridgeOutbound
+with unmanaged save
+//persistent table ztout_weighbrid
+lock master
+authorization master ( instance )
+etag master CreatedOn
+{
+  create;
+  update;
+  delete;
+  field ( mandatory : create , readonly : update) TrucksheetNo;
+
+  field ( readonly  ) VehicleNo , TotalTrucksheetWeight  , DifferenceWeight;
+  action(features :instance ) GetWeight result [1] $self;
+  determination fetch_trucksheet_data on save { field TrucksheetNo ; }
+  mapping for ztout_weighbrid
+    {
+      TrucksheetNo          = trucksheet_no;
+      VehicleNo             = vehicle_no;
+      TotalTrucksheetWeight = total_trucksheet_weight;
+      TareWeight            = tare_weight;
+      WeighbridgeWeight     = weighbridge_weight;
+      DifferenceWeight      = difference_weight;
+      WeightUnit            = weight_unit;
+      CreatedOn             = created_on;
+      CreatedBy             = created_by;
+    }
+}

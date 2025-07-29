@@ -1,0 +1,6 @@
+@EndUserText.label: 'Form Disaply'
+@AbapCatalog.extensibility.extensible: true
+define service ZSD_MILK_COLL_FORM_DISPLAY {
+  expose ZC_MILK_COLL_FORM_DISPLAY;
+  expose ZCE_MILK_COLLECTION_PDF;
+}

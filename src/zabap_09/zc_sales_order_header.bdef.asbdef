@@ -1,0 +1,33 @@
+projection;
+
+strict(1);
+use draft;
+
+define behavior for ZC_SALES_ORDER_HEADER //alias <alias_name>
+{
+  use create;
+  use update;
+  use delete;
+  use action Edit;
+  use action Activate;
+  use action Discard;
+  use action Resume;
+  use action Prepare;
+  use action CreateSalesOrder;
+
+  use association _SalesItem {create ; with draft ; }
+
+}
+
+
+define behavior for ZC_SALES_ORDER_ITEM //alias <alias_name>
+{
+
+  use update;
+  use delete;
+
+  use association _SalesHeader { with  draft; }
+
+
+
+}

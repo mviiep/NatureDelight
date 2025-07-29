@@ -1,0 +1,33 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "Rate Card Report",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD"
+  },
+  "ui5AppDetails": {
+    "appId": "com.nd.zratereport"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_044F3C3E683254F6C6F6C796FE0898F0DB2CB274_TM",
+    "semanticObject": "zratereport",
+    "action": "display",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_044F3C3E683254F6C6F6C796FE0898F0DB2CB274_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Rate Card Report"
+      }
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+@Metadata.layer: #CORE
+@UI: {
+  headerInfo: { typeName: 'Weigh Bridge',
+                typeNamePlural: 'Weigh Bridge',
+               title: { type: #STANDARD, label: 'Weigh Bridge'  } }
+                 }
+annotate entity ZC_WB_DISPALY
+    with 
+{
+  @UI.facet: [{
+             purpose: #STANDARD,
+             type: #IDENTIFICATION_REFERENCE,
+             label: 'Weigh Bridge'
+              }]
+ @UI: {  lineItem:       [ { position: 10 }  ],
+       selectionField: [{ position: 10 }] }
+GpNo;
+ @UI: {  lineItem:       [ { position:20 }  ],
+       selectionField: [{ position: 20 }] }
+Ebeln;
+ @UI: {  lineItem:       [ { position: 30 }  ] }
+Ebelp;
+@UI: {  lineItem:       [ { position:40 }  ]
+       }
+EntryType;
+@UI: {  lineItem:       [ { position:50 }  ]
+       }
+Lgort;
+@UI: {  lineItem:       [ { position:60 }  ]
+      }
+Quantity;
+@UI: {  lineItem:       [ { position:70 }  ] }
+Qtyuom;
+@UI: {  lineItem:       [ { position:80 }  ]   }
+Charg;
+@UI: {  lineItem:       [ { position:90 }  ]
+       }
+Matnr;
+@UI: {  lineItem:       [ { position:100 }  ]   }
+Yy1ChillingcenterPdi;
+@UI: {  lineItem:       [ { position:110 }  ]   }
+Yy1CompartmentPdi;
+@UI: {  lineItem:       [ { position:120 }  ]   }
+TotalWt;
+@UI: {  lineItem:       [ { position:130 }  ]   }
+ItemWt;
+@UI: {  lineItem:       [ { position:140 }  ]   }
+TareWt;
+@UI: {  lineItem:       [ { position:150 }  ]   }
+DiffWt;
+@UI: {  lineItem:       [ { position:160 }  ]   }
+TsheetWt;
+@UI: {  lineItem:       [ { position:170 }  ]   }
+WeightUnit;
+@UI: {  lineItem:       [ { position:180 }  ]   }
+TrucksheetNo;
+@UI: {  lineItem:       [ { position:190 }  ]   }
+Mblnr;
+@UI: {  lineItem:       [ { position:200 }  ]   }
+Zeile;
+@UI: {  lineItem:       [ { position:210 }  ]   }
+Mjahr;
+@UI: {  lineItem:       [ { position:220 }  ]   }
+Werks;
+@UI: {  lineItem:       [ { position:230 }  ]   }
+Fulltruckunload;
+@UI: {  lineItem:       [ { position:240 }  ]   }
+CreatedBy;
+@UI: {  lineItem:       [ { position:250 }  ]   }
+CreatedOn;
+@UI: {  lineItem:       [ { position:260 }  ]   }
+ChangedBy;
+@UI: {  lineItem:       [ { position:270 }  ]   }
+ChangedOn;
+    
+}

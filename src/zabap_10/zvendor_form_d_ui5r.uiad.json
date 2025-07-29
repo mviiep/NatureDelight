@@ -1,0 +1,33 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "Vendor Debit Form Display",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD"
+  },
+  "ui5AppDetails": {
+    "appId": "com.nd.zvendorformd"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_85D032E82B890953F5433F01C1F916F12F07E883_TM",
+    "semanticObject": "zvendor_form_d",
+    "action": "display",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_85D032E82B890953F5433F01C1F916F12F07E883_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Vendor Debit Form Display"
+      }
+    }
+  ]
+}

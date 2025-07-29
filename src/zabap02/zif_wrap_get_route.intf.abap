@@ -1,0 +1,14 @@
+INTERFACE zif_wrap_get_route
+  PUBLIC .
+
+  TYPES : BEGIN OF TY_ROUTE,
+           ROUTE TYPE i_route-route,
+           RouteName(40) type C,
+          END OF TY_ROUTE.
+
+  TYPES : T_ROUTE TYPE STANDARD TABLE OF TY_ROUTE WITH KEY ROUTE.
+
+  METHODS GET_DATA
+    CHANGING T_ROUTE  TYPE T_ROUTE.
+
+ENDINTERFACE.

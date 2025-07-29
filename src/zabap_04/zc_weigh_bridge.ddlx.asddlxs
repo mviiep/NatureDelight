@@ -1,0 +1,69 @@
+@Metadata.layer: #PARTNER
+
+@UI: { headerInfo: { typeName: 'Weigh Bridge',
+                     typeNamePlural: 'Weigh Bridge', 
+                     title: { type: #STANDARD, label: 'Weigh Bridge', value: 'PurchaseOrder'} } }
+annotate view ZC_WEIGH_BRIDGE with
+{
+  @UI.facet: [{ label : 'Purchasing Document' , 
+                   id : '10', 
+                 type : #IDENTIFICATION_REFERENCE,
+                 purpose: #STANDARD,
+                 position: 10 } ] 
+  @UI   :{  lineItem:[{ position: 10, label: 'STPO Number' },
+            { type: #FOR_ACTION, dataAction: 'saveData', label: 'Save Data', invocationGrouping: #CHANGE_SET }],
+            
+            identification: [{ position: 10, label: 'STPO Number' } ],
+           // { type: #FOR_ACTION, dataAction: 'saveData', label: 'Save Data' }],
+            selectionField:[{position: 10}]    }
+  PurchaseOrder;
+
+  @UI   :{  lineItem:[{ position: 10, label: 'Item' }],
+            identification: [{ position: 10, label: 'Item' }]  }
+  PurchaseOrderItem;
+  
+  @UI   :{  lineItem:[{ position: 10, label: 'Storage Location' }],
+            identification: [{ position: 10, label: 'Storage Location' }]  }
+  StorageLocation;
+  
+  @UI   :{  lineItem:[{ position: 10, label: 'Quantity' }],
+            identification: [{ position: 10, label: 'Quantity' }]  }
+  Quantity;
+  
+  @UI   :{  lineItem:[{ position: 10, label: 'Quantity Unit' }],
+            identification: [{ position: 10, label: 'Quantity Unit' }]  }
+  QuantityUOM;
+  
+  @UI   :{  lineItem:[{ position: 10, label: 'Chilling Center' }],
+            identification: [{ position: 10, label: 'Chilling Center' }]  }
+  ChilCenter;
+  
+  @UI   :{  lineItem:[{ position: 10, label: 'Compartment' }],
+            identification: [{ position: 10, label: 'Compartment' }]  }
+  Compartment;
+  
+  @UI   :{  lineItem:[{ position: 10, label: 'Total Weigh Bridge Wt.' }],
+            identification: [{ position: 10, label: 'Total Weigh Bridge Wt.' }]  }
+  TotalWeight;
+  
+  @UI   :{  lineItem:[{ position: 10, label: 'Weigh Bridge Wt.' }],
+            identification: [{ position: 10, label: 'Weigh Bridge Wt.' }]  }
+  ItemWeight;
+  
+  @UI   :{  lineItem:[{ position: 10, label: 'Difference Weight' }],
+            identification: [{ position: 10, label: 'Difference Weight' }]  }
+  DiffereceWt;
+  
+  @UI   :{  lineItem:[{ position: 10, label: 'Weight Unit' }],
+            identification: [{ position: 10, label: 'Weight Unit' }]  }
+  WeightUnit;
+  
+  @UI   :{  lineItem:[{ position: 10, label: 'Created By' }],
+            identification: [{ position: 10, label: 'Created By' }]  }
+  CreatedBy;
+  
+  @UI   :{  lineItem:[{ position: 10, label: 'Created On' }],
+            identification: [{ position: 10, label: 'Created On' }]  }
+  CreatedOn;
+
+}

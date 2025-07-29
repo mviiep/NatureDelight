@@ -1,0 +1,33 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "Inward Freight",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD"
+  },
+  "ui5AppDetails": {
+    "appId": "com.nd.zinwardfreight"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_1F5045F0EC5F86DD4B5DE28980590456431BD4C9_TM",
+    "semanticObject": "zinwardfreight",
+    "action": "create",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_1F5045F0EC5F86DD4B5DE28980590456431BD4C9_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Inward Freight"
+      }
+    }
+  ]
+}

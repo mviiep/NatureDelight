@@ -1,0 +1,33 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "Crate Balance Form Display",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD"
+  },
+  "ui5AppDetails": {
+    "appId": "com.nd.zcrateformdis"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_E2D5A72A2804F230E6F6AA373050AF73130A6F6A_TM",
+    "semanticObject": "zcrate_form_dis",
+    "action": "display",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_E2D5A72A2804F230E6F6AA373050AF73130A6F6A_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Crate Balance Form Display"
+      }
+    }
+  ]
+}

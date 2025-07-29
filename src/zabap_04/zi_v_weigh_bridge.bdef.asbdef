@@ -1,0 +1,18 @@
+managed implementation in class zbp_i_v_weigh_bridge unique;
+strict ( 2 );
+
+define behavior for ZI_V_WEIGH_BRIDGE alias _VWB
+//persistent table <???>
+with unmanaged save
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+ // create;
+  update;
+ // delete;
+
+  field ( readonly ) ebeln, ebelp, lgort;
+
+  action saveData result[1]  $self;
+}

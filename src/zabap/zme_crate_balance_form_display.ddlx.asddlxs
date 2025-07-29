@@ -1,0 +1,24 @@
+@Metadata.layer: #CORE
+@UI: {
+  headerInfo: { typeName: 'Crate Balance Form',
+                typeNamePlural: 'Crate Balance Form',
+               title: { type: #STANDARD, label: 'Crate Balance Form'  } } }
+
+annotate view ZC_CRATE_BALANCE_FORM_DISPALY with
+{
+  @UI.facet: [{
+              purpose: #STANDARD,
+              type: #IDENTIFICATION_REFERENCE,
+              label: 'Crate Balance Form'  }]
+  @UI: { lineItem:       [{ position: 20 }],
+  selectionField: [{ position: 20 }] }
+  Customer;
+  @UI: { lineItem:       [{ position: 30 },{ type: #FOR_ACTION, dataAction: 'PRINT_FORM', label: 'Generate PDF' }]
+  }
+  CustomerName;
+  @UI.hidden: true
+  customer1;
+  @UI.hidden: true
+  pdf_data;
+
+}

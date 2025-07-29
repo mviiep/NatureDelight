@@ -1,0 +1,53 @@
+@Metadata.layer: #CORE
+@UI: {
+  headerInfo: { typeName: 'Truck Sheet Form',
+                typeNamePlural: 'Truck Sheet Form',
+               title: { type: #STANDARD, label: 'Truck Sheet Form'  } }
+                 }
+annotate view ZC_TRUCKSHEET_FORM_DISPALY
+    with 
+{
+ @UI.facet: [{
+             purpose: #STANDARD,
+             type: #IDENTIFICATION_REFERENCE,
+             label: 'Truck Sheet Form'  }]
+  @UI: { lineItem:       [{ position: 20 }],
+  identification: [{ position: 20 }],
+  selectionField: [{ position: 20 }] }
+   TrucksheetNo;
+     @UI: { lineItem:       [{ position: 30 }],
+  identification: [{ position: 30 },{ type: #FOR_ACTION, dataAction: 'PRINT_FORM',label: 'Generate PDF' }]
+  }
+   VehicleNo;
+    @UI: { lineItem:       [{ position: 35 }],
+  identification: [{ position: 35 }] }
+   DriverName;
+     @UI: { lineItem:       [{ position: 40 }],
+  identification: [{ position: 40 }] }
+   DriverTelno;
+
+      @UI: { lineItem:       [{ position: 60 }],
+  identification: [{ position: 60 }],selectionField: [{ position: 30 }] }
+  
+  CreationDate;
+  @UI: { lineItem:       [{ position: 62 }] }
+  route;
+  @UI: { lineItem:       [{ position: 65 }] }
+  routename;
+  @UI.hidden: true
+   TransDocNo;
+      @UI: { lineItem:       [{ position: 70 }],
+  identification: [{ position: 70 }] }
+   CrateDays;
+       @UI.hidden: true
+   PdfData;
+//    @UI.hidden: true
+//   Mimetype;
+//    @UI.hidden: true
+//   Filename;
+   
+     @UI.hidden: true
+   CreatedBy;
+
+    
+}

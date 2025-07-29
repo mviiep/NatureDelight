@@ -1,0 +1,23 @@
+@Metadata.layer: #CORE
+@UI: {
+  headerInfo: { typeName: 'Loading Sheet',
+                typeNamePlural: 'Loading Sheet',
+               title: { type: #STANDARD, label: 'Loading Sheet'  } } }
+annotate entity ZC_LOADING_SHEET_FORM_DISPLAY
+    with 
+{
+ @UI: { lineItem:       [{ position: 10 }],
+  selectionField: [{ position: 10 }] }
+    TruckSheetNo;
+    @UI: { lineItem:       [{ position: 20 },{ type: #FOR_ACTION, dataAction: 'PRINT_FORM', label: 'Generate PDF' }],
+  selectionField: [{ position: 20 }] }
+    VehicleNo;
+    @UI: { lineItem:       [{ position: 30 }],
+  selectionField: [{ position: 30 }] }
+    DriverName;
+    @UI.hidden: true
+    LoadTruckseet;
+    @UI.hidden: true
+    LOADPDF;
+    
+}

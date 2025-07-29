@@ -1,0 +1,57 @@
+managed implementation in class zbp_i_trucksheet_view unique;
+strict ( 2 );
+
+define behavior for ZI_TRUCKSHET_H alias _truckheader
+persistent table zsdt_truckshet_h
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  create;
+  update;
+  delete;
+  field ( readonly: update ) TrucksheetNo ;
+  association _item { create; }
+
+  mapping for zsdt_truckshet_h
+    {
+      TrucksheetNo   = trucksheet_no;
+      CreatedBy      = created_by;
+      CreatedOn      = created_on;
+      DriverName     = driver_name;
+      DriverTelno    = driver_telno;
+      TransDocNo     = trans_doc_no;
+      TrucksheetDate = trucksheet_date;
+      VehicleNo      = vehicle_no;
+      CreationDate   = creation_date;
+    }
+}
+
+define behavior for ZI_TRUCKSHET_HI_VIEW alias _truckitem
+persistent table zsdt_truckshet_i
+lock dependent by _header
+authorization dependent by _header
+//etag master <field_name>
+{
+  update;
+  delete;
+  field ( readonly : update ) itemTrucksheetNo, TrucksheetItem;
+  association _header;
+
+  mapping for zsdt_truckshet_i
+    {
+      itemTrucksheetNo = trucksheet_no;
+      TrucksheetItem   = trucksheet_item;
+      Vbeln            = vbeln;
+      Amount           = amount;
+      Currency         = currency;
+      Kunag            = kunag;
+      Matkl            = matkl;
+      Meins            = meins;
+      Name1            = name1;
+      Noofcan          = noofcan;
+      Noofcrate        = noofcrate;
+      Qty              = qty;
+      Route            = route;
+    }
+}

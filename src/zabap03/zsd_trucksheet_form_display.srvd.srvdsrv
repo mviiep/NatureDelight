@@ -1,0 +1,7 @@
+@EndUserText.label: 'Form Disaply'
+@AbapCatalog.extensibility.extensible: true
+define service ZSD_TRUCKSHEET_FORM_DISPLAY {
+  expose ZC_TRUCKSHEET_FORM_DISPALY;
+  expose ZCE_TRUCK_SHEET_PRINT;
+  expose ZI_TRUCKSHEET_ITEM_PRINT;
+}

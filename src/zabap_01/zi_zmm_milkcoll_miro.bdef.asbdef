@@ -1,0 +1,53 @@
+managed
+implementation in class zbp_i_zmm_milkcoll_miro unique;
+strict ( 2 );
+
+define behavior for ZI_ZMM_MILKCOLL_MIRO alias MilkMiro
+//persistent table zmm_milkcoll
+with unmanaged save
+lock master
+authorization master ( instance )
+etag master CreatedOn
+//etag master <field_name>
+{
+  create;
+  update;
+  delete;
+
+field ( numbering : managed, readonly ) Id;
+field ( readonly ) Ebeln, Createdby, Createdon, Currency, Rate, Mblnr, Mjahr, Name1,
+                   Mirodoc, Miroyear;
+action ( features : instance ) CreateMiro result [1] $self;
+
+mapping for zmm_milkcoll
+{
+
+    Id = id;
+    Plant = plant;
+    Sloc = sloc;
+    Counter = counter;
+    CollDate = coll_date;
+    CollTime = coll_time;
+    Shift = shift;
+    Milktype = milk_type;
+    Matnr = matnr;
+    Lifnr = lifnr;
+    Fatuom = fatuom;
+    Fat = fat;
+    Snf = snf;
+    Protain = protain;
+    Milkuom = milkuom;
+    MilkQty = milk_qty;
+    Currency = currency;
+    Rate = rate;
+    Ebeln = ebeln;
+    Mblnr = mblnr;
+    Mjahr = mjahr;
+    Mirodoc = mirodoc;
+    Miroyear = miro_year;
+    Name1 = name1;
+    CreatedBy = created_by;
+    CreatedOn = created_on;
+
+}
+}

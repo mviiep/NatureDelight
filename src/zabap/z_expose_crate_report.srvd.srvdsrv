@@ -1,0 +1,4 @@
+@EndUserText.label: 'Crate Balance Report'
+define service Z_EXPOSE_CRATE_REPORT {
+  expose ZCE_CRATE_BAL_REP;
+}

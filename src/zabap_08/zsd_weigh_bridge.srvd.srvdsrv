@@ -1,0 +1,10 @@
+@EndUserText.label: 'Service Definition for Weigh Bridge'
+define service ZSD_WEIGH_BRIDGE {
+  expose ZCE_CDS_WB                as GET_WB;
+  expose ZCE_CDS_GP_SH             as GET_GP;
+  expose ZI_WB_VIEW                as WB_VIEW;
+  expose ZI_WB_TVIEW               as WB_TVIEW;
+  expose ZC_GATE_ENTRY;
+  expose ZCE_WEIGHT                as GET_WEIGHT;
+  expose ZC_GATE_ENTRY_WEIGHBRIDGE;
+}

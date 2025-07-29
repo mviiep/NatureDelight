@@ -1,0 +1,33 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "Outward Freight Report",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD"
+  },
+  "ui5AppDetails": {
+    "appId": "com.nd.zoutwardfrght"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_DC481670AED1FF3701B5F156B9776256794E2A8F_TM",
+    "semanticObject": "zoutward_frght",
+    "action": "display",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_DC481670AED1FF3701B5F156B9776256794E2A8F_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Outward Freight Report"
+      }
+    }
+  ]
+}

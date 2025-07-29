@@ -1,0 +1,33 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "E-Invoice Cancellation",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD"
+  },
+  "ui5AppDetails": {
+    "appId": "com.nd.zeinvcancel"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_4D1C02D61C9884C60BAFB832A36B0872C067F42E_TM",
+    "semanticObject": "ze_inv_cancel",
+    "action": "manage",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_4D1C02D61C9884C60BAFB832A36B0872C067F42E_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "E-Invoice Cancellation"
+      }
+    }
+  ]
+}

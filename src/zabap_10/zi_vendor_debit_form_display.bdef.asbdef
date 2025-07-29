@@ -1,0 +1,20 @@
+managed implementation in class zbp_i_vendor_debit_form_displa unique;
+strict ( 2 );
+
+define behavior for ZI_VENDOR_DEBIT_FORM_DISPLAY //alias <alias_name>
+with unmanaged save
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  create;
+  update;
+  delete;
+  field(readonly) AccountingDocument,FiscalYear;
+  action(features : instance ) PRINT_FORM  result [1] $self;
+  mapping for ztvendor_debit {
+  AccountingDocument = accountingdocument;
+  FiscalYear         = fiscalyear;
+  pdf                = pdf_data;
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "Catelog for journal Entry posting",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "className": "ZBG_JOURNAL_POSTING"
+  },
+  "parameters": [
+    {
+      "name": "R_DATE",
+      "mandatory": true
+    }
+  ]
+}

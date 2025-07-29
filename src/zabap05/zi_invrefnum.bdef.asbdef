@@ -1,0 +1,35 @@
+managed implementation in class zbp_i_invrefnum unique;
+strict ( 2 );
+
+define behavior for ZI_INVREFNUM //alias <alias_name>
+persistent table zsdt_invrefnum
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  create;
+  update;
+  delete;
+
+  mapping for zsdt_invrefnum
+    {
+      Bukrs        = bukrs;
+      Docno        = docno;
+      Docyear      = docyear;
+      Doctype      = doctype;
+      Odn          = odn;
+      Irn          = irn;
+      Version      = version;
+      Bupla        = bupla;
+      Odndate      = odndate;
+      Ackno        = ackno;
+      Ackdate      = ackdate;
+      Irnstatus    = irnstatus;
+      Canceldate   = canceldate;
+      Ernam        = ernam;
+      Erdat        = erdat;
+      Erzet        = erzet;
+      Signedinv    = signedinv;
+      Signedqrcode = signedqrcode;
+    }
+}

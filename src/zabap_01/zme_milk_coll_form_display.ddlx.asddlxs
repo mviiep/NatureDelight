@@ -1,0 +1,53 @@
+@Metadata.layer: #CORE
+@UI: {
+  headerInfo: { typeName: 'Milk Collection',
+                typeNamePlural: 'Milk Collection',
+               title: { type: #STANDARD, label: 'Milk Collection'  } }
+                 }
+annotate view ZC_MILK_COLL_FORM_DISPLAY with
+{
+  @UI.facet: [{
+             purpose: #STANDARD,
+             type: #IDENTIFICATION_REFERENCE,
+             label: 'Milk Collection' }]
+  @UI: { lineItem:       [{ position: 20 }],
+  identification: [{ position: 20 }],
+  selectionField: [{ position: 20 }] }
+  Mirodoc;
+  @UI: { lineItem:       [{ position: 30 },{ type: #FOR_ACTION, dataAction: 'PRINT_FORM', label: 'Generate PDF' }],
+  identification: [{ position: 30 },{ type: #FOR_ACTION, dataAction: 'PRINT_FORM', label: 'Generate PDF' }]
+  }
+  Miroyear;
+
+  @UI: { lineItem:       [{ position: 40 }],
+  identification: [{ position: 40 }],
+  selectionField: [{ position: 40 }] }
+  Lifnr;
+  @UI: { lineItem:       [{ position: 50 }],
+  identification: [{ position: 50 }]
+  }
+  Name1;
+  @UI: { lineItem:       [{ position: 60 }],
+  identification: [{ position: 60 }],
+  selectionField: [{ position: 60 }] }
+  Plant;
+  @UI: { lineItem:       [{ position: 70 }],
+  identification: [{ position: 70 }]
+  }
+  Sloc;
+  @UI: { lineItem:       [{ position: 80 }],
+  identification: [{ position: 80 }],
+  selectionField: [{ position: 80 }] }
+  PostingDate;
+  @UI.hidden: true
+  SupplierInvoiceWthnFiscalYear;
+  @UI: { lineItem:       [{ position: 90 }],
+  identification: [{ position: 90 }]
+  }
+  AccountingDocument;
+  @UI: { lineItem:       [{ position: 100 }],
+  identification: [{ position: 100 }],
+  selectionField: [{ position: 100 }] }
+  FiscalYear;
+
+}

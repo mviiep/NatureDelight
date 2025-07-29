@@ -1,0 +1,6 @@
+@EndUserText.label: 'Truck Sheet Print'
+@AbapCatalog.extensibility.extensible: true
+define service ZSD_TRUCKSHEET_PRINT {
+  expose ZCE_TRUCK_SHEET_PRINT;
+  expose ZI_TRUCKSHEET_ITEM_PRINT;
+}

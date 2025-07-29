@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service Definition For Milk MIRO'
+define service ZEXPOSE_MILKMIRO {
+  expose ZC_ZMM_MILKCOLL_MIRO as MilkMiro;
+}

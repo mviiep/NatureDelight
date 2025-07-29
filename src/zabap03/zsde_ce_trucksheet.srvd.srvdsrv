@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service Defination for custom entity ZCE_TRUCKSHEET'
+define service ZSDE_CE_TRUCKSHEET {
+  expose ZCE_TRRUCKSHEET;
+}

@@ -1,0 +1,6 @@
+@EndUserText.label: 'Service Defination Display Report'
+@AbapCatalog.extensibility.extensible: true
+define service ZSDE_TRUCKSHEET_DATA_DISPLAY {
+  expose ZC_TRUCKSHEET_DATA_DISPLAY;
+  expose ZI_TRUCKSHET_I;
+}

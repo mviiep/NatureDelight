@@ -1,0 +1,33 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "Vehicle Master",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD"
+  },
+  "ui5AppDetails": {
+    "appId": "com.nd.zvehiclemaster"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_16D28002667F72E889813FE253CE6932DBEE8F1F_TM",
+    "semanticObject": "zvehicle_master",
+    "action": "create",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_16D28002667F72E889813FE253CE6932DBEE8F1F_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Vehicle Master"
+      }
+    }
+  ]
+}

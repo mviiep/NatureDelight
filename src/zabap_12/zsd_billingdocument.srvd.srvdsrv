@@ -1,0 +1,4 @@
+@EndUserText.label: 'Serv Def For ZC_BILLINGDOCUMENT'
+define service ZSD_BILLINGDOCUMENT {
+  expose ZC_BILLINGDOCUMENT as BillDoc;
+}

@@ -1,0 +1,22 @@
+@Metadata.layer: #CORE
+@UI: {
+  headerInfo: { typeName: 'Vendor Debit Form',
+                typeNamePlural: 'Vendor Debit Form',
+               title: { type: #STANDARD, label: 'Vendor Debit Form'  } } }
+annotate entity ZC_VEBNDOR_DEBIT_FORM_DISPLAY
+    with 
+{
+  @UI: { lineItem:       [{ position: 20 }],
+  selectionField: [{ position: 20 }] }
+   AccountingDocument;
+   @UI: { lineItem:       [{ position: 30 },{ type: #FOR_ACTION, dataAction: 'PRINT_FORM', label: 'Generate PDF' }]
+   }
+   FiscalYear;
+   @UI.hidden: true
+   accountingdoctable;
+   @UI.hidden: true
+   fiscalyeartable;
+   @UI.hidden: true
+   pdf;
+    
+}

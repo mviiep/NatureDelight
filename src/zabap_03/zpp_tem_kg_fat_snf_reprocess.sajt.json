@@ -1,0 +1,43 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "Job Template For reprocess KG FAT SNF",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "catalogName": "ZCLPP_KG_FAT_SNF_REPROCESS"
+  },
+  "parameters": {
+    "singleValueParameters": [
+      {
+        "name": "P_ORDM",
+        "value": "000000000000000034"
+      },
+      {
+        "name": "P_PLANT",
+        "value": "1102"
+      },
+      {
+        "name": "P_SIMUL",
+        "value": "X"
+      },
+      {
+        "name": "P_SLOC",
+        "value": "S004"
+      }
+    ],
+    "valueRangesParameters": [
+      {
+        "name": "S_RAWM",
+        "valueRanges": [
+          {
+            "sign": "include",
+            "option": "equals",
+            "low": "000000000000000033"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service Defination for ZCE_TRUCKSHEET VIEW'
+define service ZSDE_CE_TRUCKSHEET_VIEW {
+  expose ZC_TRUCKSHEET_VIEW;
+}

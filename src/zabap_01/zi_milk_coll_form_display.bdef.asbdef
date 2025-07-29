@@ -1,0 +1,26 @@
+managed implementation in class zbp_i_milk_coll_form_display unique;
+strict ( 2 );
+
+define behavior for ZI_MILK_COLL_FORM_DISPLAY //alias <alias_name>
+with unmanaged save
+//persistent table ZI_zmm_milk_miro
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  create;
+  update;
+  delete;
+  field(readonly) Mirodoc ,Miroyear;
+  action(features : instance ) PRINT_FORM result [1] $self;
+  mapping for ZI_zmm_milk_miro { //zmm_milkcoll{
+//  Mirodoc = Mirodoc;
+  Miroyear = Miroyear;
+  pdf      = pdf;
+  Lifnr    = lifnr;
+  Name1    = name1;
+  Plant   = plant;
+  Sloc    = sloc;
+
+  }
+}

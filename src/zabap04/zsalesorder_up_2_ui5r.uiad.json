@@ -1,0 +1,33 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "Sales Order Upload",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD"
+  },
+  "ui5AppDetails": {
+    "appId": "com.nd.zsalesorderup"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_5064E3DB34CC06099D19AB304DDDF72A4A9E635D_TM",
+    "semanticObject": "zsalesorder_up",
+    "action": "manage",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_5064E3DB34CC06099D19AB304DDDF72A4A9E635D_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Sales Order Upload"
+      }
+    }
+  ]
+}

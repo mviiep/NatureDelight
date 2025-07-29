@@ -1,0 +1,33 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "Billing Document Display",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD"
+  },
+  "ui5AppDetails": {
+    "appId": "com.nd.zbillingdoc"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_C9284E358BFFE6B2812711E83E266DF5EB452168_TM",
+    "semanticObject": "zbilling_doc",
+    "action": "display",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_C9284E358BFFE6B2812711E83E266DF5EB452168_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Billing Document Display"
+      }
+    }
+  ]
+}

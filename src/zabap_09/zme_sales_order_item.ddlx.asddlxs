@@ -1,0 +1,55 @@
+@Metadata.layer: #CORE
+@UI: {
+  headerInfo: { typeName: 'Sales Order Item',
+                typeNamePlural: 'Sales Order Item',
+                title: { type: #STANDARD, label: 'Sales Order Item'  } }
+//                presentationVariant: [{ sortOrder: [{ by : 'SoID', direction: #ASC }] }]
+                }
+annotate view ZC_SALES_ORDER_ITEM with
+{
+  @UI.facet: [{  id : 'Item',
+   purpose: #STANDARD,
+   
+   type: #IDENTIFICATION_REFERENCE,
+   label: 'Sales Order Item',
+   position: 10
+    }]
+  @UI.hidden: true
+  ItemId;
+  @UI: { lineItem:       [{ position: 10 }],
+  identification: [{ position: 10 }],
+  selectionField: [{ position: 10 }] }
+  SoId;
+  @UI: { lineItem:       [{ position: 20 }],
+  identification: [{ position: 20 }]
+  }
+  Item;
+  @UI: { lineItem:       [{ position: 30 }],
+  identification: [{ position: 30 }],
+  selectionField: [{ position: 30 }] }
+  Product;
+  @UI: { lineItem:       [{ position: 40 }],
+  identification: [{ position: 40 }]}
+  Gtin;
+  @UI: { lineItem:       [{ position: 50 }],
+  identification: [{ position: 50 }]
+  }
+  Quatity;
+  @UI: { lineItem:       [{ position: 60 }],
+  identification: [{ position: 60 }] }
+  Baseunit;
+  @UI: { lineItem:       [{ position: 70 }],
+  identification: [{ position: 70 }] }
+  ItemCategory;
+  @UI: { lineItem:       [{ position: 80 }],
+  identification: [{ position: 80 }],
+  selectionField: [{ position: 80 }] }
+  Plant;
+  @UI: { lineItem:       [{ position: 90 }],
+  identification: [{ position: 90 }],
+  selectionField: [{ position: 90 }] }
+  Route;
+  /* Associations */
+
+
+}

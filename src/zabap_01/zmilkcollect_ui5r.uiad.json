@@ -1,0 +1,33 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "Milk Collection",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD"
+  },
+  "ui5AppDetails": {
+    "appId": "com.nd.zmilkcollect"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_FF22A50C17AE8789F9B2EC589305F8896075B298_TM",
+    "semanticObject": "zmilkcollect",
+    "action": "create",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_FF22A50C17AE8789F9B2EC589305F8896075B298_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Milk Collection"
+      }
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+@Metadata.layer: #CORE
+@UI: {
+  headerInfo: { typeName: 'Route Distance',
+                typeNamePlural: 'Route Distance',
+               title: { type: #STANDARD, label: 'Route Distance'  } }
+                 }
+annotate entity ZC_ROUTE_DISTANCE with
+{
+  @UI.facet: [{
+              purpose: #STANDARD,
+              type: #IDENTIFICATION_REFERENCE,
+              label: 'Route Distance'
+               }]
+  @UI: {  lineItem:       [ { position: 10 }  ],
+     identification: [ { position: 10 } ],
+    selectionField: [{ position: 10 }] }
+  Route;
+  @UI: {  lineItem:       [ { position: 20 }  ],
+     identification: [ { position: 20 } ],
+    selectionField: [{ position: 20 }] }
+  Description;
+  @UI: {  lineItem:       [ { position: 30 }  ],
+     identification: [ { position: 30 } ],
+    selectionField: [{ position: 30 }] }
+  Distance;
+  @UI: {  lineItem:       [ { position: 40 }  ],
+     identification: [ { position: 40 } ]
+  }
+  Unit;
+  @UI.hidden: true
+  CreatedOn;
+  @UI.hidden: true
+  CreatedBy;
+
+}

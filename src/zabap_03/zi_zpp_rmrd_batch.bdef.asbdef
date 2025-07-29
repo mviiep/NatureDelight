@@ -1,0 +1,36 @@
+managed
+implementation in class zbp_i_zpp_rmrd_batch unique;
+strict ( 2 );
+
+define behavior for ZI_ZPP_RMRD_BATCH alias RmrdBatch
+//persistent table zppt_rmrd_batch
+with unmanaged save
+lock master
+authorization master ( instance )
+//etag master <field_name>
+etag master CreatedOn
+
+{
+  create;
+  update;
+  delete;
+
+field ( numbering : managed, readonly ) Id;
+field ( readonly ) BatchUpd, Createdby, Createdon;
+action ( features : instance ) UpdateBatch result [1] $self;
+
+mapping for zppt_rmrd_batch
+{
+Id = id;
+Matnr = matnr;
+Batch = batch;
+DestinationFat = destination_fat;
+DestinationSnf = destination_snf;
+DestinationProtein = destination_protein;
+Uom = uom;
+BatchUpd = Batch_upd;
+    CreatedBy = created_by;
+    CreatedOn = created_on;
+}
+
+}

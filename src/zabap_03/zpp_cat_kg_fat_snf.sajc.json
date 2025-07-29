@@ -1,0 +1,28 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "Job Catalog for Posting KG FAT AND SNF",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "className": "ZCLPP_KG_FAT_SNF"
+  },
+  "parameters": [
+    {
+      "name": "P_PLANT"
+    },
+    {
+      "name": "P_SLOC"
+    },
+    {
+      "name": "P_RAWM"
+    },
+    {
+      "name": "P_ORDM"
+    },
+    {
+      "name": "P_SIMUL"
+    }
+  ]
+}

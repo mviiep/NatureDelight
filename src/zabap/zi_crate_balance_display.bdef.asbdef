@@ -1,0 +1,20 @@
+managed implementation in class zbp_i_crate_balance_display unique;
+strict ( 2 );
+
+define behavior for ZI_CRATE_BALANCE_DISPLAY //alias <alias_name>
+with unmanaged save
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  create;
+  update;
+  delete;
+  field(readonly) Customer , CustomerName;
+  action(features : instance ) PRINT_FORM parameter ZAE_CRATE_BALANCE result [1] $self;
+  mapping for ztcrate_balalce{
+  pdf_data = pdf_data;
+  customer1 = customer;
+
+  }
+}

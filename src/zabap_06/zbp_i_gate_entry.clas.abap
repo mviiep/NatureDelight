@@ -1,0 +1,10 @@
+CLASS zbp_i_gate_entry DEFINITION PUBLIC ABSTRACT FINAL FOR BEHAVIOR OF zi_gate_entry.
+PUBLIC SECTION.
+CLASS-DATA mapped_gate_entry TYPE   TABLE of zi_gate_entry.
+CLASS-DATA mapped_entry TYPE   TABLE of zi_gate_entry.
+ENDCLASS.
+
+
+
+CLASS ZBP_I_GATE_ENTRY IMPLEMENTATION.
+ENDCLASS.

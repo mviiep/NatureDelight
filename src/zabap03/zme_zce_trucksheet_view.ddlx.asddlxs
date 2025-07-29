@@ -1,0 +1,73 @@
+@Metadata.layer: #CORE
+@UI: {
+  headerInfo: { typeName: 'Trucksheet Creation',
+                typeNamePlural: 'Trucksheet Creation',
+                title: { type: #STANDARD, label: 'Trucksheet Creation', value: 'vbeln' } },
+                presentationVariant: [{ sortOrder: [{ by : 'vbeln', direction: #ASC }] }]}
+annotate entity ZC_TRUCKSHEET_VIEW with
+{
+  @UI.facet: [{   id : 'D1',
+                  purpose: #STANDARD,
+                  type: #IDENTIFICATION_REFERENCE,
+                  label: 'Trucksheet',
+                  position: 10
+              } ]
+
+
+  @UI: {      
+            identification: [{ position: 10, label : 'Billing Invoice' } ],
+            lineItem: [{ position: 10 ,
+                          type: #FOR_ACTION, 
+                          label: 'Generate Trucksheet', 
+                          dataAction: 'Forward',
+                          invocationGrouping: #CHANGE_SET }] }
+  invid;
+  
+  @UI: {    identification: [{ position: 10, label : 'Billing Invoice' } ],
+            lineItem: [{ position: 10 }] }
+    //selectionField: [{ position: 10 }] }
+  vbeln; 
+
+//  @UI: {    identification: [{ position: 10, label : 'TruckSheet No' } ],
+//            lineItem: [{ position: 10 }] }  
+// itemTrucksheetNo;
+
+//  @UI.facet: [{ id : 'vtweg',
+//          purpose: #STANDARD,
+//          type: #IDENTIFICATION_REFERENCE,
+//          label: 'Billing Invoice',
+//          position: 20 }]
+
+  @UI: { lineItem:       [{ position: 20 } ],
+    identification: [{ position: 20 }],
+    selectionField: [{ position: 20 }] }
+  vtweg;
+  
+  @UI: { lineItem:       [{ position: 30 } ],
+    identification: [{ position: 30 }],
+    selectionField: [{ position: 30 }] }
+  name;
+
+
+  @UI: { lineItem:       [{ position: 40 }],
+    identification: [{ position: 40 }],
+    selectionField: [{ position: 40 }] }
+  fkdat;
+  
+//    @UI: { lineItem:       [{ position: 50 }],
+//    identification: [{ position: 50 }],
+//    selectionField: [{ position: 50 }] }
+//  FKIMG;
+  
+  @UI: { lineItem:       [{ position: 60 }],
+    identification: [{ position: 60 }],
+    selectionField: [{ position: 60 }] }
+  netwr;
+
+
+  @UI: { lineItem:       [{ position: 70 }],
+    identification: [{ position: 70 }],
+    selectionField: [{ position: 70 }] }
+  route;
+
+}

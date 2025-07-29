@@ -1,0 +1,33 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "JV Posting",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD"
+  },
+  "ui5AppDetails": {
+    "appId": "com.nd.zpostjv"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_4E325D7244A3487BF4CFC8BDB6A9867ADCE28841_TM",
+    "semanticObject": "zpost_jv",
+    "action": "create",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_4E325D7244A3487BF4CFC8BDB6A9867ADCE28841_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "JV Posting"
+      }
+    }
+  ]
+}

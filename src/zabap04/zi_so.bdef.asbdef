@@ -1,0 +1,57 @@
+managed
+implementation in class zbp_i_so unique;
+strict ( 2 );
+
+define behavior for ZI_SO alias ZISO
+//persistent table zsdt_so
+
+lock master
+authorization master ( instance )
+//etag master <field_name>
+with unmanaged save
+{
+  create;
+  update;
+  delete;
+
+  field ( numbering : managed, readonly ) Id;
+  //field ( mandatory ) Auart, Audat, Bstkd, BstkdE, Gstin, Kdmat, Knumv, Kunnr, Matnr;
+
+//  action ( features : global ) CreateSO result [1] $self;
+action CreateSO result [1] $self;
+//  action
+//(
+//features
+//:
+//instance
+//)
+//CreateSO
+//result
+//[1]
+//$self;
+
+  mapping for zsdt_so control zsdt_so_x corresponding
+    {
+      Auart   = auart;
+      Audat   = audat;
+      Bstkd   = bstkd;
+      BstkdE  = bstkde;
+      Gstin   = gstin;
+      Kdmat   = kdmat;
+      Knumv   = knumv;
+      Kunnr   = kunnr;
+      Kwmeng  = kwmeng;
+      Matnr   = matnr;
+      Posnr   = posnr;
+      Id      = id;
+      PrcDate = prcdate;
+      Pstyv   = pstyv;
+      Soid    = soid;
+      Spart   = spart;
+      Vbeln   = vbeln;
+      Vkorg   = vkorg;
+      Vtweg   = vtweg;
+      Vrkme   = vrkme;
+      Werks   = werks;
+    }
+}

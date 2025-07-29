@@ -1,0 +1,5 @@
+@EndUserText.label: 'Gate Entry'
+define service ZSD_GATE_ENTRY {
+  expose ZC_GATE_ENTRY;
+  expose ZCE_GATE_ENTRY;
+}

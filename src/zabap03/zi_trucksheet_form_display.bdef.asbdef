@@ -1,0 +1,28 @@
+managed implementation in class zbp_i_trucksheet_form_display unique;
+strict ( 2 );
+
+define behavior for ZI_TRUCKSHEET_FORM_DISPLAY //alias <alias_name>
+with unmanaged save
+lock master
+authorization master ( instance )
+//etag master CreatedOn
+{
+  create;
+  update;
+  delete;
+  field(readonly) TrucksheetNo;
+  action(features : instance ) PRINT_FORM result [1] $self;
+  mapping for zsdt_truckshet_h{
+  CrateDays = crate_days;
+  CreatedBy = created_by;
+
+  DriverName = driver_name;
+  DriverTelno = driver_telno ;
+  PdfData = pdf_data;
+  TransDocNo = trans_doc_no;
+
+  TrucksheetNo = trucksheet_no;
+  VehicleNo  = vehicle_no;
+
+  }
+}

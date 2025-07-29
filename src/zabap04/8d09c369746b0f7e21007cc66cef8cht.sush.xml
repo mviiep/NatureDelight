@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_SUSH" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <HEAD>
+    <NAME>8D09C369746B0F7E21007CC66CEF8C</NAME>
+    <TYPE>HT</TYPE>
+    <DISPLAY_NAME>R3TR IWSG ZSRVB_C_SO_HEADER_0001</DISPLAY_NAME>
+    <DEVCLASS>ZABAP04</DEVCLASS>
+    <ABAP_LANGUAGE_VERSION>5</ABAP_LANGUAGE_VERSION>
+   </HEAD>
+  </asx:values>
+ </asx:abap>
+</abapGit>

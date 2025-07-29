@@ -1,0 +1,4 @@
+@EndUserText.label: 'RMRD Batch Update'
+define service ZEXPOSE_RMRD_UPDATE {
+  expose ZC_RMRD_BATCH_UPDATE;
+}

@@ -1,0 +1,21 @@
+managed
+implementation in class zbp_i_trucksheet_view unique;
+//with draft;
+strict ( 1 );
+
+define behavior for ZI_TRUCKSHEET_VIEW //alias <alias_name>
+//persistent table ZSDT_TRUCKSHET_H
+//draft table zblg_d_insp_tsp
+with unmanaged save
+lock master
+authorization master ( instance )
+
+{
+  create;
+  update;
+  delete;
+
+  action ( features : global ) forward parameter ZAE_TRUCKSHEET result [1] $self;
+  validation Vehicle_number on save {  create; update; }
+
+}

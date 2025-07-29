@@ -1,0 +1,66 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "Vehicle Master",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "objectType": "DDLS",
+    "objectName": "ZCDS_VEHICLE_MAST"
+  },
+  "fields": [
+    {
+      "name": "CURRENCY",
+      "nature": "general"
+    },
+    {
+      "name": "LIFNR",
+      "nature": "general"
+    },
+    {
+      "name": "RATE",
+      "nature": "general"
+    },
+    {
+      "name": "CREATEDBY",
+      "nature": "general"
+    },
+    {
+      "name": "NAME1",
+      "nature": "general"
+    },
+    {
+      "name": "CREATEDON",
+      "nature": "general"
+    },
+    {
+      "name": "VEHICLENO",
+      "nature": "general"
+    },
+    {
+      "name": "VEHITYPE",
+      "nature": "general"
+    },
+    {
+      "name": "CAP",
+      "nature": "general"
+    },
+    {
+      "name": "DRIVERNAME",
+      "nature": "general"
+    },
+    {
+      "name": "VID",
+      "nature": "general"
+    },
+    {
+      "name": "CAPUOM",
+      "nature": "general"
+    },
+    {
+      "name": "DRIVERTELNO",
+      "nature": "general"
+    }
+  ]
+}

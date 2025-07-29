@@ -1,0 +1,66 @@
+managed implementation in class zbp_i_so_header unique;
+strict ( 2 );
+//with draft;
+define behavior for ZI_SO_HEADER alias _iheader
+persistent table zsdt_so_header
+//draft table zsdt_so_header
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  create;
+  update;
+  delete;
+  field ( readonly ) Soid;
+  association _item { create; }
+  //  determination fetch_Upload on modify { field AUART; create; }
+
+
+  mapping for zsdt_so_header
+    {
+      Auart     = auart;
+      Audat     = audat;
+      Bstkd     = bstkd;
+      BstkdE    = bstkd_e;
+      CreatedBy = created_by;
+      CreatedOn = created_on;
+      Erdat     = erdat;
+      Ernam     = ernam;
+      Erzet     = erzet;
+      Knumv     = knumv;
+      Kunnr     = kunnr;
+      Spart     = spart;
+      Vbeln     = vbeln;
+      Soid      = soid;
+      Vkorg     = vkorg;
+      Vtweg     = vtweg;
+      Waerk     = waerk;
+    }
+}
+
+define behavior for ZI_SO_ITEM //alias <alias_name>
+persistent table zsdt_so_item
+lock dependent by _header
+authorization dependent by _header
+//etag master <field_name>
+{
+  update;
+  delete;
+  field ( readonly : update ) Soid, Posnr;
+  association _header;
+
+  mapping for zsdt_so_item
+    {
+      Kdmat   = kdmat;
+      Kwmeng  = kwmeng;
+      Matnr   = matnr;
+      Meins   = meins;
+      Posnr   = posnr;
+      Pstyv   = pstyv;
+      Soid    = soid;
+      Vrkme   = vrkme;
+      Waerk   = waerk;
+      Werks   = werks;
+    }
+
+}

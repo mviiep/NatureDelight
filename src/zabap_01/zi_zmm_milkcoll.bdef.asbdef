@@ -1,0 +1,71 @@
+managed
+//with draft;
+implementation in class zbp_i_zmm_milkcoll unique;
+strict ( 2 ); //Uncomment this line in order to enable strict mode 2.
+//The strict mode has two variants (strict(1), strict(2))
+//and is prerequisite to be future proof regarding syntax and to be able to release your BO.
+
+define behavior for ZI_ZMM_MILKCOLL alias MilkColl
+//persistent table zmm_milkcoll
+with unmanaged save
+lock master
+authorization master ( instance )
+etag master CreatedOn
+{
+  create;
+  update;
+  delete;
+
+field ( numbering : managed, readonly ) Id;
+field ( readonly ) Ebeln, Createdby, Createdon, Currency, Rate, Mblnr, Mjahr, Name1,
+                   BaseRate, Incentive, Commision, Transport;
+field ( mandatory ) Plant, Sloc, Lifnr, CollDate, Fat, Snf, MilkQty, MilkUom;
+
+action ( features : instance ) FetchPrice result [1] $self;
+action ( features : instance ) CreatePO result [1] $self;
+action ( features : instance ) CreateGrn result [1] $self;
+determination FetchRate on save { field Lifnr; field Plant; field Sloc; field Fat; field Snf; }
+determination fetchname on modify { field Lifnr; create; }
+validation validate_date on save { field CollDate; create; }
+validation mandatory_data on save { field plant, sloc, Lifnr, CollDate, Shift,
+                                          milktype, matnr, milkuom, Fatuom, milkqty,
+                                          fat, snf; create; }
+
+
+mapping for zmm_milkcoll
+{
+
+    Id = id;
+    Plant = plant;
+    Sloc = sloc;
+    Counter = counter;
+    CollDate = coll_date;
+    CollTime = coll_time;
+    Shift = shift;
+    Milktype = milk_type;
+    Matnr = matnr;
+    Lifnr = lifnr;
+    Fatuom = fatuom;
+    Fat = fat;
+    Snf = snf;
+    Protain = protain;
+    Milkuom = milkuom;
+    MilkQty = milk_qty;
+    Batch = batch;
+    Currency = currency;
+    Rate = rate;
+    BaseRate = Base_Rate;
+    Incentive = Incentive;
+    Commision = Commision;
+    Transport = Transport;
+    Ebeln = ebeln;
+    Mblnr = mblnr;
+    Mjahr = mjahr;
+    Mirodoc = mirodoc;
+    Miroyear = miro_year;
+    Name1 = name1;
+    CreatedBy = created_by;
+    CreatedOn = created_on;
+
+}
+}

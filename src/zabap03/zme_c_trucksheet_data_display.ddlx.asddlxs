@@ -1,0 +1,50 @@
+@Metadata.layer: #CORE
+@UI: {
+  headerInfo: { typeName: 'TrucksheetNo',
+                typeNamePlural: 'TrucksheetNo',
+                title: { type: #STANDARD, label: 'Trucksheet List Report', value: 'Trucksheetno' } },
+                presentationVariant: [{ sortOrder: [{ by : 'TrucksheetNo', direction: #ASC }] }]}
+
+annotate entity ZC_TRUCKSHEET_DATA_DISPLAY with
+{
+  
+ 
+  @UI.lineItem: [{ position: 10 }]
+//                          { type: #FOR_ACTION, dataAction: 'PrintForm', label: 'Print' } ]  
+//  @UI: { identification: [{ position: 10 },
+//                          { type: #FOR_ACTION, 
+//                            dataAction: 'PrintForm', 
+//                            invocationGrouping: #CHANGE_SET,
+//                            label: 'Print' } ],
+//         selectionField: [{ position: 10 }] }
+         
+         
+  TrucksheetNo;
+
+  @UI.lineItem: [{ position: 20}]
+  @UI.dataPoint: { qualifier: 'Vehicle No', title: 'Vehicle No'}
+
+  @UI: {    identification: [{ position: 20, label : 'Vehicle No' } ] }
+  VehicleNo;
+
+
+  @UI.lineItem: [{ position: 30}]
+  @UI.dataPoint: { qualifier: 'Driver Name', title: 'Driver Name'}
+
+  @UI: {    identification: [{ position: 30, label : 'Driver Name' } ] }
+  DriverName;
+
+  @UI.lineItem: [{ position: 40}]
+  @UI.dataPoint: { qualifier: 'Driver Telno', title: 'Driver Tel no'}
+
+  @UI: {    identification: [{ position: 40, label : 'Driver Tel no' } ] }
+  DriverTelno;
+
+  @UI.lineItem: [{ position: 60}]
+  @UI.dataPoint: { qualifier: 'TransDoc No', title: 'TransDoc No'}
+
+  @UI: {    identification: [{ position: 60, label : 'TransDoc No' } ] }
+  TransDocNo;
+
+
+}

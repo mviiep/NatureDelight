@@ -1,0 +1,4 @@
+@EndUserText.label: 'Route Disatnce'
+define service ZSD_ROUTE_DISTANCE {
+  expose ZC_ROUTE_DISTANCE;
+}

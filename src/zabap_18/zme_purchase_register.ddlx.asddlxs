@@ -1,0 +1,39 @@
+@Metadata.layer: #CORE
+@UI.headerInfo: {
+    typeName: 'Purchase Register',
+    typeNamePlural: 'Purchase Register'
+
+}
+annotate entity ZC_PURRCHASE_REGISTER with
+
+{
+  @UI.selectionField: [{ position:  20 }]
+  @UI.lineItem: [{ position: 30 }]
+  FiscalYear;
+  @UI.lineItem: [{ position: 10 }]
+  @UI.selectionField: [{ position:  10 }]
+  AccountingDocument;
+  @UI.lineItem: [{ position: 20 }]
+  AccountingDocumentItem;
+  @UI.lineItem: [{ position: 40 }]
+  AccountingDocumentType;
+  @UI.lineItem: [{ position: 50 }]
+  @UI.selectionField: [{ position:  30 }]
+  PostingDate;
+  @UI.lineItem: [{ position: 60 }]
+  DocumentDate;
+  @UI.lineItem: [{ position: 70 }]
+  ReferenceDocument;
+  @UI.lineItem: [{ position: 80 }]
+  PurchasingDocument;
+  @UI.lineItem: [{ position: 90 }]
+  PurchasingDocumentItem;
+  @UI.lineItem: [{ position: 100 }]
+  GLAccount;
+  @UI.lineItem: [{ position: 110 }]
+  MaterialDocument;
+   @UI.lineItem: [{ position: 120 }]
+  GRNFIDOC;
+
+
+}

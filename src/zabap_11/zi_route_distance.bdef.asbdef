@@ -1,0 +1,23 @@
+managed implementation in class zbp_i_route_distance unique;
+strict ( 2 );
+
+define behavior for ZI_ROUTE_DISTANCE //alias <alias_name>
+persistent table ztroute_distance
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  create;
+  update;
+  delete;
+
+  field(mandatory)Route,Distance,Unit;
+  mapping for ztroute_distance{
+  CreatedBy = created_by;
+  CreatedOn = created_on;
+  Description = description;
+  Distance   = distance;
+  Route   = route;
+  Unit    = unit;
+  }
+}

@@ -1,0 +1,44 @@
+managed implementation in class zbp_i_wb_tview unique;
+strict ( 2 );
+
+define behavior for ZI_WB_TVIEW alias bd_tview
+persistent table zmmt_weigh_bridg
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  create;
+  update;
+  delete;
+
+  mapping for zmmt_weigh_bridg
+    {
+      gatepass_no          = gp_no;
+      PurchaseOrder        = ebeln;
+      PurchaseOrderItem    = ebelp;
+      EntryType            = entry_type;
+      StorageLocation      = lgort;
+      Quantity             = quantity;
+      QuantityUOM          = qtyuom;
+      Batch                = charg;
+      ChilCenter           = yy1_chillingcenter_pdi;
+      Compartment          = yy1_compartment_pdi;
+      TotalWeight          = total_wt;
+      ItemWeight           = item_wt;
+      TareWeight           = tare_wt;
+      DiffWeight           = diff_wt;
+      TrucksheetWeight     = tsheet_wt;
+      WeightUnit           = weight_unit;
+      TrucksheetNo         = trucksheet_no;
+      FullTruckUnload      = fulltruckunload;
+      MaterialDocument     = mblnr;
+      MaterialDocumentYear = mjahr;
+      MaterialDocumentItem = zeile;
+      Plant                = werks;
+      Material             = matnr;
+      CreatedBy            = created_by;
+      CreatedOn            = created_on;
+      ChangedBy            = changed_by;
+      ChangedOn            = changed_on;
+    }
+}

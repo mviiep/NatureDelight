@@ -1,0 +1,4 @@
+@EndUserText.label: 'Lekage Report'
+define service ZSD_LEAKAGE_REPORT {
+  expose ZC_LEAKAGE_DATA;
+}

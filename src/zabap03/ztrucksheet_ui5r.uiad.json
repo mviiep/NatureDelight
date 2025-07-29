@@ -1,0 +1,34 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "Truck Sheet",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD"
+  },
+  "ui5AppDetails": {
+    "appId": "com.nd.ztrucksheet"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_CDF10F4CA759EBDAD9C64726866BDB06ACE31F11_TM",
+    "semanticObject": "ztrucksheet",
+    "action": "display",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_CDF10F4CA759EBDAD9C64726866BDB06ACE31F11_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Truck Sheet",
+        "subtitle": "Display"
+      }
+    }
+  ]
+}

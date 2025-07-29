@@ -1,0 +1,53 @@
+managed implementation in class zbp_i_gate_entry unique;
+strict(1) ;
+
+define behavior for ZI_GATE_ENTRY alias GateEntry
+with unmanaged save
+
+//persistent table zdt_gate_entry
+lock master
+authorization master ( instance )
+early numbering
+//etag master <field_name>
+{
+  create;
+
+  update;
+  delete;
+
+
+  field ( readonly ) GateEntryNo , InDate, InTime, OutDate, OutTime, Batch,Pdfattach;
+  field ( mandatory ) VehicleNo,  EntryType, Comodity;
+
+  //field ( features : instance ) EntryType;
+//  determination hide_fields_for_outbound on modify { field EntryType; create; update; }
+  validation check_STO_number on save { field StoNo; create; update; }
+  validation validate_material on save { field Material; create; update; }
+  validation  validate_Vehicle_out on save { create; }
+  determination populate_entry_on_save on save { create; }
+  action vehicle_out result [1] $self;
+  action Print_Gate_Pass result [1] $self;
+
+  mapping for zdt_gate_entry
+    {
+      Batch        = batch;
+      Comodity     = comodity;
+      DriverMobile = driver_mobile;
+      DriverName   = driver_name;
+      EntryType    = entry_type;
+      GateEntryNo  = gate_entry_no;
+      InDate       = in_date;
+      InTime       = in_time;
+      Material     = material;
+      InboundType  = inbound_type;
+      OutDate      = out_date;
+      OutTime      = out_time;
+      Purpose      = purpose;
+      StoNo        = sto_no;
+      VehicleNo    = vehicle_no;
+      VehicleOut   = vehicle_out;
+      Pdfattach    = pdf_attach;
+      Mimetype     = mimetype;
+      Filename     = filename;
+    }
+}
